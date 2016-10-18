@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv').config();
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -9,7 +11,7 @@ var galleriesList = Object.keys(galleries).map(function(value) {
 
 // Mailgun
 var Mailgun = require('mailgun-js');
-var api_key = 'key-881b4671144c2afc7c3aeeccdbca8241';
+var api_key = process.env.MAILGUN;
 var domain = 'mg.sanchezstudio.co';
 
 app.use('/assets', express.static(__dirname + '/public'));

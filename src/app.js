@@ -32,7 +32,6 @@ app.get('/about', function(req, res){
 });
 
 app.get('/gallery/:slug', function(req, res){
-  console.log(req.params);
   var slug = req.params.slug;
   if (slug === undefined) {
     res.status(503);
@@ -51,7 +50,6 @@ app.get('/contact', function(req, res){
 app.post('/submit', function(req,res) {
   let mailgun = new Mailgun({apiKey: api_key, domain: domain});
   let model = req.body;
-  console.log(model);
   //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
   // var mailgun = new Mailgun({apiKey: api_key, domain: domain});
 
@@ -78,7 +76,6 @@ app.post('/submit', function(req,res) {
       //We pass the variable "email" from the url parameter in an object rendered by Jade
       //res.render('submitted', { email : req.params.mail });
       res.send('success');
-      console.log(body);
     }
   });
 

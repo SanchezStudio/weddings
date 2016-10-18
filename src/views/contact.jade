@@ -1,0 +1,22 @@
+extends ./layout.jade
+
+block content
+  div#contact.contact
+    div.ghost
+      h1 We'd love to work with you
+      p Tell us a little bit about you and your loved one. We'd love to start a conversation about capturing your perfect day.
+      form#contact-form(method="post" action="/submit")
+        fieldset
+          label(for="name") Name*
+            span#name
+          input(type="text", name="name")
+        fieldset
+          label(for="email") Email*
+            span#email
+          input(type="text", name="email")
+        fieldset
+          label(for="message") Message*
+            span#message
+          input(type="text", name="message")
+        fieldset
+          input.btn(type="submit" value="Submit")

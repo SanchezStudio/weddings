@@ -1,0 +1,17 @@
+extends ./layout.jade
+
+block content
+  section.header
+    h1 #{gallery.title}
+    p #{gallery.description}
+  section#gallery.gallery
+    if gallery.has_video
+      div.gallery__video.animate
+        div.gallery__video-inner
+          <iframe src="https://player.vimeo.com/video/#{gallery.video_url}?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    if gallery.has_gallery
+      for item in gallery.images
+        if item.orientation === "portrait"
+          img.animate.gallery__item.gallery__item--portrait(data-img-src="#{item.url}" alt="#{item.title}")
+        else
+          img.animate.gallery__item(data-img-src="#{item.url}" alt="#{item.title}")

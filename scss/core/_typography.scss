@@ -1,0 +1,43 @@
+h1 {
+  font-size: 22px;
+  letter-spacing: 0.2rem;
+  /* All titles */
+  @media screen and (min-width: 640px) {
+    font-size: 28px;
+  }
+}
+h2 {
+  font-size: 18px;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  margin-bottom: $margin-lg;
+  /* Sanchez Studio - About page*/
+  @media screen and (min-width: 640px) {
+    font-size: 24px;
+  }
+}
+p {
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.05rem;
+  line-height: 1.45;
+  margin-bottom: $margin-md;
+  @media screen and (min-width: 640px) {
+    font-size: 16px;
+  }
+}
+.btn {
+  min-width: 125px;
+  font-size: 16px;
+  letter-spacing: 0.300rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: $grey;
+  display: inline-block;
+  color: #fff;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+}
+

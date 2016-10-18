@@ -1,0 +1,10 @@
+extends ./layout.jade
+
+block content
+  section.header
+    img.logo(src="/assets/images/logo.svg")
+  section.home
+    for item in galleries
+      a.home__item(href="/gallery/#{item.slug}")
+        img.home__img(src="#{item.thumbnail}" alt="#{item.title}")
+        h3.home__title #{item.title}

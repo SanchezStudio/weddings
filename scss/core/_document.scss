@@ -1,0 +1,41 @@
+/* ================================== */
+/* BASE */
+/* ================================== */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-size: 100%;
+  font-family: 'Crimson Text', Georgia, serif;
+  color: $grey;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+section {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-md;
+  padding-right: $padding-md;
+  @media screen and (min-width: 1024px) {
+    width: percentage(1024 / 1440);
+    max-width: 1024px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

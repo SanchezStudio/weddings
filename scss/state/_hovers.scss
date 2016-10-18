@@ -1,0 +1,10 @@
+a {
+  color: $grey;
+  transition: 400ms ease;
+  &:visited,
+  &:active,
+  &:focus {
+    color: $grey;
+  }
+  &:hover { color: lighten($grey, 25); }
+}

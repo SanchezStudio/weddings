@@ -269,7 +269,7 @@ footer {
   text-align: center; }
 
 footer p {
-  font-size: 18px; }
+  font-size: 12px; }
 
 /* ================================== */
 /* Helpers */
@@ -324,10 +324,9 @@ footer p {
     margin-bottom: 15px; }
   .home__title {
     display: block;
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
-    text-transform: uppercase; }
+    font-size: 14px;
+    letter-spacing: 0.075rem;
+    text-transform: lowercase; }
 
 .home__banner {
   width: 80%; }

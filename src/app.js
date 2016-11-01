@@ -21,10 +21,29 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 
-app.get('/', function(req, res){
+app.get('/', function(req, res, next){
   var path = req.path;
   res.locals.path = path;
   res.render('index', { galleries: galleriesList });
+});
+
+app.get('/:name', function(req, res) {
+  var options = {
+    root: __dirname + '/public/',
+    dotfiles: 'deny',
+    headers: {
+        'x-timestamp': Date.now(),
+        'x-sent': true
+    }
+  };
+
+  var fileName = req.params.name;
+  res.sendFile(fileName, options, function (err) {
+    if (err) {
+      console.log(err);
+      res.status(err.status).end();
+    }
+  });
 });
 
 app.get('/about', function(req, res){

@@ -271,6 +271,28 @@ footer {
 footer p {
   font-size: 12px; }
 
+.social {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 0; }
+  .social__items {
+    display: inline-block;
+    padding: 10px; }
+  .social__link {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 0.075rem;
+    text-transform: lowercase;
+    color: #636263;
+    text-decoration: none;
+    transition: 400ms ease; }
+    .social__link:visited, .social__link:active, .social__link:focus {
+      color: #636263; }
+    .social__link:hover {
+      color: #a3a2a3; }
+
 /* ================================== */
 /* Helpers */
 /* ================================== */

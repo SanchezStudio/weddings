@@ -27,7 +27,7 @@ app.get('/', function(req, res, next){
   res.render('index', { galleries: galleriesList });
 });
 
-app.get('/:name', function(req, res) {
+app.get('/sitemap/:name', function(req, res) {
   var options = {
     root: __dirname + '/public/',
     dotfiles: 'deny',

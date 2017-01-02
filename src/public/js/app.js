@@ -2077,7 +2077,9 @@
 	    (function () {
 	
 	      var form = document.getElementById('contact-form');
+	      var formContainer = document.getElementById('form-container');
 	      var inputs = document.getElementsByTagName('input');
+	      var textarea = document.getElementsByTagName('textarea');
 	      var state = {
 	        'submitting': false,
 	        'success': false,
@@ -2085,8 +2087,11 @@
 	        'errors': {}
 	      };
 	
-	      var setState = function setState(property, value) {
+	      var setState = function setState(property, value, callback) {
 	        state[property] = value;
+	        if (callback) {
+	          callback();
+	        }
 	      };
 	
 	      var setErrorField = function setErrorField(id, error) {
@@ -2099,7 +2104,7 @@
 	        var model = {
 	          'name': inputs.name.value,
 	          'email': inputs.email.value,
-	          'message': inputs.message.value
+	          'message': textarea.message.value
 	        };
 	
 	        return model;
@@ -2150,20 +2155,26 @@
 	          console.log(res);
 	          if (res.data === 'success') {
 	            setState('success', true);
+	            formContainer.classList.add('success');
 	          }
 	        }).catch(function () {
 	          setState('error', true);
+	          formContainer.classList.add('error');
 	        });
 	      };
 	
 	      var onSubmit = function onSubmit(e) {
 	        e.preventDefault();
+	        setState('submitting', true);
+	        formContainer.classList.add('submitting');
 	        if (validate()) {
 	          send();
 	        } else {
 	          console.log(state.errors);
 	          setState('error', true);
 	        }
+	        setState('submitting', false);
+	        formContainer.classList.remove('submitting');
 	      };
 	
 	      form.addEventListener('submit', onSubmit, false);

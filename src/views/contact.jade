@@ -2,21 +2,28 @@ extends ./layout.jade
 
 block content
   div#contact.contact
-    div.ghost
-      h1 We'd love to work with you
-      p Tell us a little bit about you and your loved one. We'd love to start a conversation about capturing your perfect day.
-      form#contact-form(method="post" action="/submit")
-        fieldset
-          label(for="name") Name*
-            span#name
-          input(type="text", name="name")
-        fieldset
-          label(for="email") Email*
-            span#email
-          input(type="text", name="email")
-        fieldset
-          label(for="message") Message*
-            span#message
-          input(type="text", name="message")
-        fieldset
-          input.btn(type="submit" value="Submit")
+    div#form-container.ghost
+      div.form
+        h1 We'd love to work with you
+        p Tell us a little bit about you and your loved one. We'd love to start a conversation about capturing your perfect day.
+        form#contact-form(method="post" action="/submit")
+          fieldset
+            label(for="name") Name*
+              span#name
+            input(type="text", name="name")
+          fieldset
+            label(for="email") Email*
+              span#email
+            input(type="text", name="email")
+          fieldset
+            label(for="message") Message*
+              span#message
+            textarea(name="message")
+          fieldset
+            input.btn(type="submit" value="Submit")
+      div.form-success
+        h1 Thank you for reaching out!
+        p We will get back to you as soon as possible to chat about your big day!
+      div.form-error
+        h1 Uh oh! Looks like something went wrong.
+        p Try refreshing the page and sending the form again. Or just give us a call at #[a(href="tel:2484202040") 248.420.2040].

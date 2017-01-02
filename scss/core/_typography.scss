@@ -33,11 +33,15 @@ p {
   text-transform: uppercase;
   border: none;
   outline: none;
-  background: $grey;
+  background-color: $grey;
   display: inline-block;
   color: #fff;
   width: auto;
   text-align: center;
   padding: 10px;
+  font-family: 'Crimson', serif;
+  cursor: pointer;
+  transition: 400ms ease;
+  &:hover { background-color: darken($grey, 10%); }
 }
 

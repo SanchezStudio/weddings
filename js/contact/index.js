@@ -6,7 +6,9 @@ import axios from 'axios';
   if (contact) {
 
     let form = document.getElementById('contact-form');
+    let formContainer = document.getElementById('form-container')
     let inputs = document.getElementsByTagName('input');
+    let textarea = document.getElementsByTagName('textarea');
     let state = {
       'submitting': false,
       'success': false,
@@ -14,8 +16,11 @@ import axios from 'axios';
       'errors': {}
     }
 
-    let setState = function(property, value) {
+    let setState = function(property, value, callback) {
       state[property] = value;
+      if (callback) {
+        callback();
+      }
     }
 
     let setErrorField = function(id, error) {
@@ -28,7 +33,7 @@ import axios from 'axios';
       let model = {
         'name': inputs.name.value,
         'email': inputs.email.value,
-        'message': inputs.message.value
+        'message': textarea.message.value
       }
 
       return model;
@@ -80,21 +85,27 @@ import axios from 'axios';
           console.log(res);
           if (res.data === 'success') {
             setState( 'success', true );
+            formContainer.classList.add('success');
           }
         })
         .catch(() => {
           setState( 'error', true );
+          formContainer.classList.add('error');
         });
     }
 
     let onSubmit = function(e) {
       e.preventDefault();
+      setState('submitting', true);
+      formContainer.classList.add('submitting')
       if (validate()) {
         send();
       } else {
         console.log(state.errors);
         setState( 'error', true );
       }
+      setState('submitting', false);
+      formContainer.classList.remove('submitting');
     }
 
 

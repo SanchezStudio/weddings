@@ -60,6 +60,10 @@ app.get('/gallery/:slug', function(req, res){
   }
 });
 
+app.get('/investment', function(req, res){
+  res.render('investment');
+});
+
 app.get('/contact', function(req, res){
   res.render('contact');
 });

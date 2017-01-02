@@ -244,6 +244,8 @@ header #logo_text {
       transition-delay: 100ms; }
     .nav__item:nth-of-type(3) {
       transition-delay: 200ms; }
+    .nav__item:nth-of-type(4) {
+      transition-delay: 300ms; }
   .nav__link {
     display: block;
     padding: 5px;
@@ -431,6 +433,16 @@ footer p {
       left: 0;
       background: url("/assets/images/about/about.jpg") no-repeat center center;
       background-size: cover; }
+
+.investment:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/investment/background.jpg"); }
 
 .contact {
   position: relative;

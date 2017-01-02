@@ -16,12 +16,12 @@ h2 {
     font-size: 24px;
   }
 }
-p {
+p, li {
   font-size: 16px;
   font-style: italic;
   letter-spacing: 0.05rem;
   line-height: 1.45;
-  margin-bottom: $margin-md;
+  padding-bottom: $margin-md;
   @media screen and (min-width: 640px) {
     font-size: 16px;
   }
@@ -45,3 +45,7 @@ p {
   &:hover { background-color: darken($grey, 10%); }
 }
 
+strong {
+  font-style: normal;
+  font-weight: 700;
+}

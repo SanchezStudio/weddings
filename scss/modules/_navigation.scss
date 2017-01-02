@@ -10,7 +10,7 @@ header {
   font-size: 0;
   padding-left: $padding-lg;
   padding-right: $padding-lg;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
   height: 65px;
   z-index: 10;
   @media screen and (min-width: 768px) {
@@ -37,7 +37,6 @@ header #logo_text {
   display: inline-block;
   width: 50%;
   text-align: right;
-  background: #fff;
   &__toggle {
     position: relative;
     width: 30px;
@@ -85,6 +84,9 @@ header #logo_text {
     opacity: 0;
     transform: translateX(20px);
     transition: 600ms ease;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
     .is-menu-open & {
       opacity: 1;
       transform: translateX(0);

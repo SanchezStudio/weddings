@@ -34,7 +34,7 @@ import $ from 'properjs-hobo';
     function update() {
       ticking = false;
 
-      if (latestKnownScroll >= splashHeight - 50) {
+      if (latestKnownScroll >= splashHeight - 100) {
         html.classList.remove('nav-is-white');
       } else {
         html.classList.add('nav-is-white');

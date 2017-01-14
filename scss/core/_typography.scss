@@ -23,7 +23,7 @@ p, li {
   line-height: 1.45;
   padding-bottom: $margin-md;
   @media screen and (min-width: 640px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .btn {
@@ -39,7 +39,7 @@ p, li {
   width: auto;
   text-align: center;
   padding: 10px;
-  font-family: 'Crimson', serif;
+  font-family: $serif;
   cursor: pointer;
   transition: 400ms ease;
   &:hover { background-color: darken($grey, 10%); }

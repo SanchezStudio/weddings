@@ -8,11 +8,12 @@ html, body {
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: #fff;
   // height: 100%;
 }
 body {
   font-size: 100%;
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: $serif;
   color: $grey;
 }
 img {
@@ -32,6 +33,12 @@ section {
   margin-right: auto;
   padding-left: $padding-md;
   padding-right: $padding-md;
+  &:first-of-type {
+    padding-top: 125px;
+  }
+  // @media screen and (min-width: 768px) {
+  //   padding-top: $padding-xl;
+  // }
   @media screen and (min-width: 1024px) {
     width: percentage(1024 / 1440);
     max-width: 1024px;

@@ -15,8 +15,8 @@
     "post:css": "postcss --use autoprefixer --autoprefixer.browsers 'last 2 versions' --output $npm_package_config_css_file $npm_package_config_css_file",
     "build": "npm-run-all build:prod-js build:css post:css",
     "watch": "npm-run-all --parallel watch:js watch:scss",
-    "watch:js": "chokidar ./js/* --initial -d 10 -c 'npm run build:dev-js'",
-    "watch:scss": "chokidar ./scss/* --initial -d 10 -c 'npm run build:css'"
+    "watch:js": "chokidar ./js/* --initial -c 'npm run build:dev-js'",
+    "watch:scss": "chokidar ./scss/* --initial -c 'npm run build:css'"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +25,8 @@
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "jade": "^1.11.0",
-    "mailgun-js": "^0.7.12"
+    "mailgun-js": "^0.7.12",
+    "smoothscroll-polyfill": "^0.3.4"
   },
   "devDependencies": {
     "axios": "^0.14.0",

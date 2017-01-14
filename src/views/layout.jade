@@ -3,6 +3,14 @@ html(lang="en")
     include ./partials/_head.jade
 
     body
+      if path == '/'
+        div.splash
+          div.splash__logo
+            include ./../public/images/white-loose-logo.svg
+          video.splash__video(poster="/assets/images/video/reel.jpg" playsinline muted loop autoplay)
+            source(src="/assets/images/video/reel.mp4")
+            source(src="/assets/images/video/reel.webm")
+          a.splash__caret(href="#welcome") ^
       include ./partials/_nav.jade
       block content
       include ./partials/_footer.jade

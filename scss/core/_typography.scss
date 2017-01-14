@@ -22,9 +22,9 @@ p, li {
   letter-spacing: 0.05rem;
   line-height: 1.45;
   padding-bottom: $margin-md;
-  @media screen and (min-width: 640px) {
-    font-size: 14px;
-  }
+  // @media screen and (min-width: 640px) {
+  //   font-size: 14px;
+  // }
 }
 .btn {
   min-width: 125px;

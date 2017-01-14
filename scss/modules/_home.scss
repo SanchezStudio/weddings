@@ -1,14 +1,6 @@
 /* ================================== */
 /* Home */
 /* ================================== */
-.seo-heading {
-  text-indent: -9999px;
-  line-height: 0;
-}
-.logo {
-  display: inline-block;
-  width: 197px;
-}
 .home {
   position: relative;
   display: block;
@@ -64,9 +56,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200px;
+    width: 125px;
     transform: translate(-50%, -50%);
     z-index: 3;
+    @media screen and (min-width: 640px) {
+      width: 200px;
+    }
   }
   &__video {
     position: absolute;

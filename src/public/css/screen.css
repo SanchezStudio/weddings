@@ -252,8 +252,14 @@ header #logo_text {
     top: 100%;
     right: 0;
     display: inline-block;
+    padding: 5px;
     transform: translateY(-200%);
-    transition-delay: 1s; }
+    transition-delay: 1s;
+    background-color: rgba(255, 255, 255, 0.9); }
+    @media screen and (min-width: 1024px) {
+      .nav__menu {
+        background-color: transparent;
+        padding: 0; } }
     .is-menu-open .nav__menu {
       transform: translateY(0);
       transition-delay: 0s; }
@@ -343,14 +349,6 @@ footer p {
 /* ================================== */
 /* Home */
 /* ================================== */
-.seo-heading {
-  text-indent: -9999px;
-  line-height: 0; }
-
-.logo {
-  display: inline-block;
-  width: 197px; }
-
 .home {
   position: relative;
   display: block;
@@ -401,9 +399,12 @@ footer p {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200px;
+    width: 125px;
     transform: translate(-50%, -50%);
     z-index: 3; }
+    @media screen and (min-width: 640px) {
+      .splash__logo {
+        width: 200px; } }
   .splash__video {
     position: absolute;
     top: 50%;

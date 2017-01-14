@@ -74,8 +74,14 @@ header #logo_text {
     top: 100%;
     right: 0;
     display: inline-block;
+    padding: 5px;
     transform: translateY(-200%);
     transition-delay: 1s;
+    background-color: rgba(255, 255, 255, .9);
+    @media screen and (min-width: 1024px) {
+      background-color: transparent;
+      padding: 0;
+    }
     .is-menu-open & {
       transform: translateY(0);
       transition-delay: 0s;

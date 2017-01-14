@@ -1,7 +1,9 @@
 extends ./layout.jade
 
 block content
-  section#home.home
+  section#home.header.header--home
+    h1 Sanchez Studio
+  section.home
     for item in galleries
       a.home__item(href="/gallery/#{item.slug}")
         img.home__img(src="#{item.thumbnail}" alt="#{item.title}")

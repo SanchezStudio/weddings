@@ -1,9 +1,6 @@
 extends ./layout.jade
 
 block content
-  //- section.header
-    //- h1.seo-heading Sanchez Studio Co Wedding Photography and Videography
-    //- img.logo(src="/assets/images/logo.svg")
   section#home.home
     for item in galleries
       a.home__item(href="/gallery/#{item.slug}")

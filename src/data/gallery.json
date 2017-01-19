@@ -1,417 +1,572 @@
 {
-  "taylor-and-malisa": {
-    "title": "Taylor & Malisa",
-    "description": "Descriptions are hard. Especially for friends, but here it goes. We wanted to shoot this one so bad that we contacted Taylor pretty much as soon as we found out about the engagement. Long story short, these two are incredible human beings and we could not have asked for a more fun/perfect day with them. Not to mention the killer rave at the end of the night. Love you guys, wish we could shoot it all over again!",
-    "slug": "taylor-and-malisa",
-    "has_video": false,
-    "thumbnail": "/assets/images/gallery/04/thumbnail.jpg",
-    "has_gallery": true,
-    "images": [
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/01.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/02.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/03.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/04.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/05.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/06.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/07.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/08.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/09.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/10.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/11.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/12.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/13.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/14.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/15.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/16.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/17.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/18.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/19.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/20.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/21.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/22.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/23.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/24.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/25.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/26.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/27.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/28.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/29.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/30.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/31.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/32.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/33.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/34.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/35.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/36.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/37.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/38.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/39.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/40.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/41.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/42.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/43.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/44.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/45.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/46.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/47.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/48.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/49.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/50.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/51.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/52.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/53.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/54.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/55.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/56.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/57.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/58.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/59.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/60.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/61.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/62.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/63.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/64.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/04/65.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/66.jpg"
-      },
-      {
-        "title": "Taylor & Malisa",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/04/67.jpg"
-      }
-    ]
-  },
   "kendall-and-caleb": {
     "title": "Kendall & Caleb",
     "description": "We had known Kendall for 3 years before we were given the opportunity to film her and Caleb for their wedding. Kendall and Caleb were incredible, beautiful people to work with, so chill, and so fun. We couldn't be any more proud of them and the commitment they've made to each other.",
     "slug": "kendall-and-caleb",
     "has_video": true,
     "video_url": "136897897",
-    "thumbnail": "/assets/images/gallery/01/thumbnail.jpg",
+    "thumbnail": "/assets/images/gallery/kendall-caleb/thumbnail.jpg",
     "has_gallery": true,
     "images": [
       {
         "title": "Kendall & Caleb 01",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/01.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/01.jpg"
       },
       {
         "title": "Kendall & Caleb 02",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/02.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/02.jpg"
       },
       {
         "title": "Kendall & Caleb 03",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/03.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/03.jpg"
       },
       {
         "title": "Kendall & Caleb 04",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/04.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/04.jpg"
       },
       {
         "title": "Kendall & Caleb 05",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/01/05.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/05.jpg"
       },
       {
         "title": "Kendall & Caleb 06",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/06.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/06.jpg"
       },
       {
         "title": "Kendall & Caleb 07",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/07.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/07.jpg"
       },
       {
         "title": "Kendall & Caleb 08",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/01/08.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/08.jpg"
       },
       {
         "title": "Kendall & Caleb 09",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/01/09.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/09.jpg"
       },
       {
         "title": "Kendall & Caleb 10",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/01/10.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/10.jpg"
       },
       {
         "title": "Kendall & Caleb 11",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/11.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/11.jpg"
       },
       {
         "title": "Kendall & Caleb 12",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/01/12.jpg"
+        "url": "/assets/images/gallery/kendall-caleb/12.jpg"
+      }
+    ]
+  },
+  "taylor-and-malisa": {
+    "title": "Taylor & Malisa",
+    "description": "Descriptions are hard. Especially for friends, but here it goes. We wanted to shoot this one so bad that we contacted Taylor pretty much as soon as we found out about the engagement. Long story short, these two are incredible human beings and we could not have asked for a more fun/perfect day with them. Not to mention the killer rave at the end of the night. Love you guys, wish we could shoot it all over again!",
+    "slug": "taylor-and-malisa",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/taylor-malisa/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/01.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/02.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/03.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/04.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/05.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/06.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/07.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/08.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/09.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/10.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/11.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/12.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/13.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/14.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/15.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/16.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/17.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/18.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/19.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/20.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/21.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/22.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/23.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/24.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/25.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/26.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/27.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/28.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/29.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/30.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/31.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/32.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/33.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/34.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/35.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/36.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/37.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/38.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/39.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/40.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/41.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/42.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/43.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/44.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/45.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/46.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/47.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/48.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/49.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/50.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/51.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/52.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/53.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/54.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/55.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/56.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/57.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/58.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/59.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/60.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/61.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/62.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/63.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/64.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/taylor-malisa/65.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/66.jpg"
+      },
+      {
+        "title": "Taylor & Malisa",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/taylor-malisa/67.jpg"
+      }
+    ]
+  },
+  "andy-and-hillary": {
+    "title": "Andy & Hillary",
+    "description": "Meg and I could not be more thankful to these two for befriending us during our time in Salt Lake City. Thanks Andy & Hill for all the hangs/food/drinks, and mega thanks for letting us pet sit for Penny! Oh ya, and this portrait sesh in the Salt Flats was dope",
+    "slug": "andy-and-hillary",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/andy-hillary/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Andy & Hillary 01",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-01.jpg"
+      },
+      {
+        "title": "Andy & Hillary 02",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-02.jpg"
+      },
+      {
+        "title": "Andy & Hillary 03",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-03.jpg"
+      },
+      {
+        "title": "Andy & Hillary 04",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-04.jpg"
+      },
+      {
+        "title": "Andy & Hillary 05",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-05.jpg"
+      },
+      {
+        "title": "Andy & Hillary 06",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-06.jpg"
+      },
+      {
+        "title": "Andy & Hillary 07",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-07.jpg"
+      },
+      {
+        "title": "Andy & Hillary 08",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-08.jpg"
+      },
+      {
+        "title": "Andy & Hillary 09",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-09.jpg"
+      },
+      {
+        "title": "Andy & Hillary 10",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-10.jpg"
+      },
+      {
+        "title": "Andy & Hillary 11",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-11.jpg"
+      },
+      {
+        "title": "Andy & Hillary 12",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-12.jpg"
+      },
+      {
+        "title": "Andy & Hillary 13",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-13.jpg"
+      },
+      {
+        "title": "Andy & Hillary 14",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-14.jpg"
+      },
+      {
+        "title": "Andy & Hillary 15",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-15.jpg"
+      },
+      {
+        "title": "Andy & Hillary 16",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-16.jpg"
+      },
+      {
+        "title": "Andy & Hillary 17",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-17.jpg"
+      },
+      {
+        "title": "Andy & Hillary 18",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-18.jpg"
+      },
+      {
+        "title": "Andy & Hillary 19",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-19.jpg"
+      },
+      {
+        "title": "Andy & Hillary 20",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-20.jpg"
+      },
+      {
+        "title": "Andy & Hillary 21",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-21.jpg"
+      },
+      {
+        "title": "Andy & Hillary 22",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-22.jpg"
+      },
+      {
+        "title": "Andy & Hillary 23",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-23.jpg"
+      },
+      {
+        "title": "Andy & Hillary 24",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-24.jpg"
+      },
+      {
+        "title": "Andy & Hillary 25",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-25.jpg"
+      },
+      {
+        "title": "Andy & Hillary 26",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-26.jpg"
+      },
+      {
+        "title": "Andy & Hillary 27",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-27.jpg"
+      },
+      {
+        "title": "Andy & Hillary 28",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-28.jpg"
+      },
+      {
+        "title": "Andy & Hillary 29",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/andy-hillary/salt-flats-29.jpg"
       }
     ]
   },
@@ -420,128 +575,268 @@
     "description": "Full disclosure: We were not hired to shoot this stuff. I (Caleb) was in the bridal party and Meg came along for (most of) the ride. Thankfully Luke and Kelsey are as chill as they come and agreed to let Meg snap some pics! We love these two kind and humble hearts and I mean, just look at them. They're precious.",
     "slug": "luke-and-kelsey",
     "has_video": false,
-    "thumbnail": "/assets/images/gallery/02/thumbnail.jpg",
+    "thumbnail": "/assets/images/gallery/luke-kelsey/thumbnail.jpg",
     "has_gallery": true,
     "images": [
       {
         "title": "Luke & Kelsey 01",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/01.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/01.jpg"
       },
       {
         "title": "Luke & Kelsey 02",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/02.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/02.jpg"
       },
       {
         "title": "Luke & Kelsey 03",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/03.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/03.jpg"
       },
       {
         "title": "Luke & Kelsey 04",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/04.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/04.jpg"
       },
       {
         "title": "Luke & Kelsey 05",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/05.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/05.jpg"
       },
       {
         "title": "Luke & Kelsey 06",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/06.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/06.jpg"
       },
       {
         "title": "Luke & Kelsey 07",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/07.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/07.jpg"
       },
       {
         "title": "Luke & Kelsey 08",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/08.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/08.jpg"
       },
       {
         "title": "Luke & Kelsey 09",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/02/09.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/09.jpg"
       },
       {
         "title": "Luke & Kelsey 10",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/02/10.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/10.jpg"
       },
       {
         "title": "Luke & Kelsey 11",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/11.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/11.jpg"
       },
       {
         "title": "Luke & Kelsey 12",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/12.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/12.jpg"
       },
       {
         "title": "Luke & Kelsey 13",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/13.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/13.jpg"
       },
       {
         "title": "Luke & Kelsey 14",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/14.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/14.jpg"
       },
       {
         "title": "Luke & Kelsey 15",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/15.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/15.jpg"
       },
       {
         "title": "Luke & Kelsey 16",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/16.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/16.jpg"
       },
       {
         "title": "Luke & Kelsey 17",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/17.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/17.jpg"
       },
       {
         "title": "Luke & Kelsey 18",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/18.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/18.jpg"
       },
       {
         "title": "Luke & Kelsey 19",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/19.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/19.jpg"
       },
       {
         "title": "Luke & Kelsey 20",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/20.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/20.jpg"
       },
       {
         "title": "Luke & Kelsey 21",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/21.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/21.jpg"
       },
       {
         "title": "Luke & Kelsey 22",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/22.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/22.jpg"
       },
       {
         "title": "Luke & Kelsey 23",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/23.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/23.jpg"
       },
       {
         "title": "Luke & Kelsey 24",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/02/24.jpg"
+        "url": "/assets/images/gallery/luke-kelsey/24.jpg"
+      }
+    ]
+  },
+  "kyle-and-kelbe": {
+    "title": "Kyle & Kelbe",
+    "description": "Alright, I'm going to try to refrain from going all day on this one...First off, I have no idea how we didn't do more photoshoots with these two in SLC. Secondly, I love these losers. Kyle has always been and I hope always will be a true friend to me, and I hope I can do the same for him. If you're ever looking to have a intelligent conversation with another passionate human being, Kelbe is your girl. These two are not just fantastic individuals, but they also make a great team, and I am proud of the things they are doing together. Keep it up dudes!",
+    "slug": "kyle-and-kelbe",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/kyle-kelbe/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Kyle & Kelbe 01",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/01.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 02",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/02.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 03",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/03.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 04",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/04.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 05",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/05.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 06",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/06.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 07",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/07.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 08",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/08.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 09",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/09.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 10",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/10.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 11",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/11.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 12",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/12.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 13",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/13.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 14",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/14.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 15",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/15.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 16",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/16.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 17",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/17.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 18",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/18.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 19",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/19.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 20",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/20.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 21",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/21.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 22",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/22.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 23",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/23.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 24",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/kyle-kelbe/24.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 25",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/25.jpg"
+      },
+      {
+        "title": "Kyle & Kelbe 26",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/kyle-kelbe/26.jpg"
       }
     ]
   },
@@ -550,143 +845,143 @@
     "description": "We had such a wonderful day with Steve and Morgan. Shooting at the Draper Temple just south of Salt Lake City was beautiful, and seeing Morgan's kids as the best man and maid of honor respectively was exactly as precious as it sounds.",
     "slug": "steve-and-morgan",
     "has_video": false,
-    "thumbnail": "/assets/images/gallery/03/thumbnail.jpg",
+    "thumbnail": "/assets/images/gallery/steve-morgan/thumbnail.jpg",
     "has_gallery": true,
     "images": [
       {
         "title": "Steve & Morgan 01",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/01.jpg"
+        "url": "/assets/images/gallery/steve-morgan/01.jpg"
       },
       {
         "title": "Steve & Morgan 02",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/02.jpg"
+        "url": "/assets/images/gallery/steve-morgan/02.jpg"
       },
       {
         "title": "Steve & Morgan 03",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/03.jpg"
+        "url": "/assets/images/gallery/steve-morgan/03.jpg"
       },
       {
         "title": "Steve & Morgan 04",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/04.jpg"
+        "url": "/assets/images/gallery/steve-morgan/04.jpg"
       },
       {
         "title": "Steve & Morgan 05",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/05.jpg"
+        "url": "/assets/images/gallery/steve-morgan/05.jpg"
       },
       {
         "title": "Steve & Morgan 06",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/06.jpg"
+        "url": "/assets/images/gallery/steve-morgan/06.jpg"
       },
       {
         "title": "Steve & Morgan 07",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/07.jpg"
+        "url": "/assets/images/gallery/steve-morgan/07.jpg"
       },
       {
         "title": "Steve & Morgan 08",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/08.jpg"
+        "url": "/assets/images/gallery/steve-morgan/08.jpg"
       },
       {
         "title": "Steve & Morgan 09",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/09.jpg"
+        "url": "/assets/images/gallery/steve-morgan/09.jpg"
       },
       {
         "title": "Steve & Morgan 10",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/10.jpg"
+        "url": "/assets/images/gallery/steve-morgan/10.jpg"
       },
       {
         "title": "Steve & Morgan 11",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/11.jpg"
+        "url": "/assets/images/gallery/steve-morgan/11.jpg"
       },
       {
         "title": "Steve & Morgan 12",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/12.jpg"
+        "url": "/assets/images/gallery/steve-morgan/12.jpg"
       },
       {
         "title": "Steve & Morgan 13",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/13.jpg"
+        "url": "/assets/images/gallery/steve-morgan/13.jpg"
       },
       {
         "title": "Steve & Morgan 14",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/14.jpg"
+        "url": "/assets/images/gallery/steve-morgan/14.jpg"
       },
       {
         "title": "Steve & Morgan 15",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/15.jpg"
+        "url": "/assets/images/gallery/steve-morgan/15.jpg"
       },
       {
         "title": "Steve & Morgan 16",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/16.jpg"
+        "url": "/assets/images/gallery/steve-morgan/16.jpg"
       },
       {
         "title": "Steve & Morgan 17",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/17.jpg"
+        "url": "/assets/images/gallery/steve-morgan/17.jpg"
       },
       {
         "title": "Steve & Morgan 18",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/18.jpg"
+        "url": "/assets/images/gallery/steve-morgan/18.jpg"
       },
       {
         "title": "Steve & Morgan 19",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/19.jpg"
+        "url": "/assets/images/gallery/steve-morgan/19.jpg"
       },
       {
         "title": "Steve & Morgan 20",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/20.jpg"
+        "url": "/assets/images/gallery/steve-morgan/20.jpg"
       },
       {
         "title": "Steve & Morgan 21",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/21.jpg"
+        "url": "/assets/images/gallery/steve-morgan/21.jpg"
       },
       {
         "title": "Steve & Morgan 22",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/22.jpg"
+        "url": "/assets/images/gallery/steve-morgan/22.jpg"
       },
       {
         "title": "Steve & Morgan 23",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/23.jpg"
+        "url": "/assets/images/gallery/steve-morgan/23.jpg"
       },
       {
         "title": "Steve & Morgan 24",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/24.jpg"
+        "url": "/assets/images/gallery/steve-morgan/24.jpg"
       },
       {
         "title": "Steve & Morgan 25",
         "orientation": "portrait",
-        "url": "/assets/images/gallery/03/25.jpg"
+        "url": "/assets/images/gallery/steve-morgan/25.jpg"
       },
       {
         "title": "Steve & Morgan 26",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/26.jpg"
+        "url": "/assets/images/gallery/steve-morgan/26.jpg"
       },
       {
         "title": "Steve & Morgan 27",
         "orientation": "landscape",
-        "url": "/assets/images/gallery/03/27.jpg"
+        "url": "/assets/images/gallery/steve-morgan/27.jpg"
       }
     ]
   },
@@ -696,7 +991,7 @@
     "slug": "nick-and-amy",
     "has_video": true,
     "video_url": "146736760",
-    "thumbnail": "/assets/images/gallery/05/thumbnail.jpg",
+    "thumbnail": "/assets/images/gallery/nick-amy/thumbnail.jpg",
     "has_gallery": false
   },
   "miriam-and-brittan": {
@@ -705,16 +1000,7 @@
     "slug": "miriam-and-brittan",
     "has_video": true,
     "video_url": "119005762",
-    "thumbnail": "/assets/images/gallery/06/thumbnail.jpg",
-    "has_gallery": false
-  },
-  "katie-and-jonathan": {
-    "title": "Katie & Jonathan",
-    "description": "",
-    "slug": "katie-and-jonathan",
-    "has_video": true,
-    "video_url": "113806702",
-    "thumbnail": "/assets/images/gallery/07/thumbnail.jpg",
+    "thumbnail": "/assets/images/gallery/miriam-brittan/thumbnail.jpg",
     "has_gallery": false
   }
 }

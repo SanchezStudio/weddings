@@ -11,6 +11,7 @@ import $ from 'properjs-hobo';
     let link = $('.splash__caret');
     let latestKnownScroll = 0;
     let ticking = false;
+    let storyLink = $('.nav__item--stories');
 
     html.classList.add('nav-is-white');
 
@@ -42,6 +43,7 @@ import $ from 'properjs-hobo';
     }
 
     link[0].addEventListener("click", onClick, false);
+    storyLink[0].addEventListener("click", onClick, false);
     window.addEventListener('scroll', onScroll, false);
   }
 

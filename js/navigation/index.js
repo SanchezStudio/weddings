@@ -5,12 +5,19 @@ import Menu from "../Menu";
 
   let nav = new Menu( $( ".nav" ) );
   let toggle = $( ".nav__toggle" );
+  let storyItem = $( ".nav__item--stories" );
 
   let onClick = function(e) {
     e.preventDefault();
     nav.toggle();
   }
 
-  toggle[0].addEventListener("click", onClick, false);
+  let itemClick = function(e) {
+    e.preventDefault();
+    nav.toggle();
+  }
+
+  toggle.on("click", (e) => { onClick(e); });
+  storyItem.on("click", (e) => { itemClick(e); });
 
 })();

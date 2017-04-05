@@ -82,13 +82,24 @@
 	
 	  var nav = new _Menu2.default((0, _properjsHobo2.default)(".nav"));
 	  var toggle = (0, _properjsHobo2.default)(".nav__toggle");
+	  var storyItem = (0, _properjsHobo2.default)(".nav__item--stories");
 	
 	  var onClick = function onClick(e) {
 	    e.preventDefault();
 	    nav.toggle();
 	  };
 	
-	  toggle[0].addEventListener("click", onClick, false);
+	  var itemClick = function itemClick(e) {
+	    e.preventDefault();
+	    nav.toggle();
+	  };
+	
+	  toggle.on("click", function (e) {
+	    onClick(e);
+	  });
+	  storyItem.on("click", function (e) {
+	    itemClick(e);
+	  });
 	})();
 
 /***/ },
@@ -3834,6 +3845,7 @@
 	      var link = (0, _properjsHobo2.default)('.splash__caret');
 	      var latestKnownScroll = 0;
 	      var ticking = false;
+	      var storyLink = (0, _properjsHobo2.default)('.nav__item--stories');
 	
 	      html.classList.add('nav-is-white');
 	
@@ -3843,6 +3855,7 @@
 	      };
 	
 	      link[0].addEventListener("click", onClick, false);
+	      storyLink[0].addEventListener("click", onClick, false);
 	      window.addEventListener('scroll', onScroll, false);
 	    })();
 	  }

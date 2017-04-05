@@ -90,7 +90,7 @@
 	  };
 	
 	  var itemClick = function itemClick(e) {
-	    e.preventDefault();
+	    // e.preventDefault();
 	    nav.toggle();
 	  };
 	

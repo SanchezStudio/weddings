@@ -377,8 +377,7 @@ footer p {
   .home__title {
     display: block;
     font-size: 14px;
-    letter-spacing: 0.075rem;
-    text-transform: lowercase; }
+    letter-spacing: 0.075rem; }
 
 .home__banner {
   width: 80%; }

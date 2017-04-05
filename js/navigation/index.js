@@ -13,7 +13,7 @@ import Menu from "../Menu";
   }
 
   let itemClick = function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     nav.toggle();
   }
 

@@ -1,4 +1,74 @@
 {
+  "brittany-and-dez": {
+    "title": "Brittany & Dez",
+    "description": "April 1, 2017 • Columbus, Ohio • More Coming Soon",
+    "slug": "brittany-and-dez",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/brittany-dez/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/01.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/02.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/brittany-dez/03.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/brittany-dez/04.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/05.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/06.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/07.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/08.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/brittany-dez/09.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/10.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/brittany-dez/11.jpg"
+      },
+      {
+        "title": "Brittany & Dez",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/brittany-dez/12.jpg"
+      }
+    ]
+  },
   "tiffany-and-john": {
     "title": "Tiffany & John",
     "description": "February 6, 2017 • Columbus, Ohio",
@@ -511,7 +581,7 @@
   },
   "kendall-and-caleb": {
     "title": "Kendall & Caleb",
-    "description": "March 29, 2015 • Atlanta",
+    "description": "March 29, 2015 • Atlanta, Georgia",
     "slug": "kendall-and-caleb",
     "has_video": true,
     "video_url": "136897897",

@@ -12,6 +12,14 @@ let { isElementInViewport, isElementLoadable, throttle } = core.util.default;
     let ticking         = false;
     let i;
 
+    // let imageOrientation = function(image) {
+    //   if (image.clientWidth > image.clientHeight) {
+    //     image.classList.add("gallery__item--landscape");
+    //   } else {
+    //     image.classList.add("gallery__item--portrait");
+    //   }
+    // }
+
     window.setTimeout(function() {
       if (galleryVideo) {
         galleryVideo.classList.add('is-active');

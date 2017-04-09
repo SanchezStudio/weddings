@@ -1271,7 +1271,6 @@
 	var isElementLoadable = function isElementLoadable(el) {
 	  if (el) {
 	    var bounds = el.getBoundingClientRect();
-	
 	    return bounds.top < window.innerHeight * 2;
 	  }
 	};
@@ -1370,6 +1369,14 @@
 	      var galleryArray = [].concat(_toConsumableArray(galleryImages));
 	      var ticking = false;
 	      var i = void 0;
+	
+	      // let imageOrientation = function(image) {
+	      //   if (image.clientWidth > image.clientHeight) {
+	      //     image.classList.add("gallery__item--landscape");
+	      //   } else {
+	      //     image.classList.add("gallery__item--portrait");
+	      //   }
+	      // }
 	
 	      window.setTimeout(function () {
 	        if (galleryVideo) {

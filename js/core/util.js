@@ -1,7 +1,6 @@
 const isElementLoadable = function ( el ) {
   if ( el ) {
     const bounds = el.getBoundingClientRect();
-
     return ( bounds.top < (window.innerHeight * 2) );
   }
 };

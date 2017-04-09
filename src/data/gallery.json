@@ -1,7 +1,207 @@
 {
+  "tiffany-and-john": {
+    "title": "Tiffany & John",
+    "description": "February 6, 2017 • Columbus, Ohio",
+    "slug": "tiffany-and-john",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/tiffany-john/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/01.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/02.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/03.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/04.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/05.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/06.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/07.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/08.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/09.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/10.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/11.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/12.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/13.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/14.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/15.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/16.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/17.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/18.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/19.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/20.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/21.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/22.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/23.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/24.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/25.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/26.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/27.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/28.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/29.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/30.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/31.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/32.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/33.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/34.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/35.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/36.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/tiffany-john/37.jpg"
+      },
+      {
+        "title": "Tiffany & John",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/tiffany-john/38.jpg"
+      }
+    ]
+  },
   "corey-and-lacy": {
     "title": "Corey & Lacy",
-    "description": "German Village, in Columbus, Ohio, does a top notch job of making things look so choice during winter. And adding an adorable couple with a pristine 1974 Baja Beetle into the mix, sends it over the roof. Lacy & Corey are pros when it comes to modeling, even though they didn't know they had it in them, making our job so easy. We're honored that they asked us to capture their big day as well, all the way in Aspen, Colorado. We can't wait and are so excited for them both.",
+    "description": "February 5, 2017 • Columbus, Ohio",
     "slug": "corey-and-lacy",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/corey-lacy/thumbnail.jpg",
@@ -311,7 +511,7 @@
   },
   "kendall-and-caleb": {
     "title": "Kendall & Caleb",
-    "description": "We had known Kendall for 3 years before we were given the opportunity to film her and Caleb for their wedding. Kendall and Caleb were incredible, beautiful people to work with, so chill, and so fun. We couldn't be any more proud of them and the commitment they've made to each other.",
+    "description": "March 29, 2015 • Atlanta",
     "slug": "kendall-and-caleb",
     "has_video": true,
     "video_url": "136897897",
@@ -382,7 +582,7 @@
   },
   "taylor-and-malisa": {
     "title": "Taylor & Malisa",
-    "description": "Descriptions are hard. Especially for friends, but here it goes. We wanted to shoot this one so bad that we contacted Taylor pretty much as soon as we found out about the engagement. Long story short, these two are incredible human beings and we could not have asked for a more fun/perfect day with them. Not to mention the killer rave at the end of the night. Love you guys, wish we could shoot it all over again!",
+    "description": "November 5, 2016 • Louisville, Kentucky",
     "slug": "taylor-and-malisa",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/taylor-malisa/thumbnail.jpg",
@@ -727,7 +927,7 @@
   },
   "andy-and-hillary": {
     "title": "Andy & Hillary",
-    "description": "Meg and I could not be more thankful to these two for befriending us during our time in Salt Lake City. Thanks Andy & Hill for all the hangs/food/drinks, and mega thanks for letting us pet sit for Penny! Oh ya, and this portrait sesh in the Salt Flats was dope",
+    "description": "October 2, 2016 • Bonneville Salt Flats, Utah",
     "slug": "andy-and-hillary",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/andy-hillary/thumbnail.jpg",
@@ -882,7 +1082,7 @@
   },
   "luke-and-kelsey": {
     "title": "Luke & Kelsey",
-    "description": "Full disclosure: We were not hired to shoot this stuff. I (Caleb) was in the bridal party and Meg came along for (most of) the ride. Thankfully Luke and Kelsey are as chill as they come and agreed to let Meg snap some pics! We love these two kind and humble hearts and I mean, just look at them. They're precious.",
+    "description": "May 21, 2015 • Grand Rapids, Michigan",
     "slug": "luke-and-kelsey",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/luke-kelsey/thumbnail.jpg",
@@ -1012,7 +1212,7 @@
   },
   "kyle-and-kelbe": {
     "title": "Kyle & Kelbe",
-    "description": "Alright, I'm going to try to refrain from going all day on this one...First off, I have no idea how we didn't do more photoshoots with these two in SLC. Secondly, I love these losers. Kyle has always been and I hope always will be a true friend to me, and I hope I can do the same for him. If you're ever looking to have a intelligent conversation with another passionate human being, Kelbe is your girl. These two are not just fantastic individuals, but they also make a great team, and I am proud of the things they are doing together. Keep it up dudes!",
+    "description": "October 9, 2016 • Big Cottonwood Canyon, Utah",
     "slug": "kyle-and-kelbe",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/kyle-kelbe/thumbnail.jpg",
@@ -1152,7 +1352,7 @@
   },
   "steve-and-morgan": {
     "title": "Steve & Morgan",
-    "description": "We had such a wonderful day with Steve and Morgan. Shooting at the Draper Temple just south of Salt Lake City was beautiful, and seeing Morgan's kids as the best man and maid of honor respectively was exactly as precious as it sounds.",
+    "description": "July 13, 2016 • Draper, Utah",
     "slug": "steve-and-morgan",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/steve-morgan/thumbnail.jpg",
@@ -1297,7 +1497,7 @@
   },
   "nick-and-amy": {
     "title": "Nick & Amy",
-    "description": "We were lucky to shoot Nick and Amy in our home town of Columbus, which we love dearly. Between the sweet vows and the incredible surprise song from Amy (she nailed that Whitney Houston jam), we had such a blast with these two.",
+    "description": "May 30, 2015 • Columbus, Ohio",
     "slug": "nick-and-amy",
     "has_video": true,
     "video_url": "146736760",
@@ -1306,7 +1506,7 @@
   },
   "miriam-and-brittan": {
     "title": "Miriam & Brittan",
-    "description": "Shooting weddings can sometimes be less than glamorous, but every once in a blue moon you get to spend this special day with a great friend. Miriam is as old a friend as they come, and we were honoured to be able to catalog this day for her and Brittan. So happy to be witnesses for such an eventful occasion.",
+    "description": "January 19, 2015 • Canton, Ohio",
     "slug": "miriam-and-brittan",
     "has_video": true,
     "video_url": "119005762",

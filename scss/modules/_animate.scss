@@ -4,7 +4,7 @@
 .animate {
   opacity: 0;
   transform: translate3d(0, 35px, 0);
-  transition: 600ms ease;
+  transition: opacity 600ms ease, transform 600ms ease;
 }
 .animate.is-active {
   opacity: 1;

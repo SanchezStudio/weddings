@@ -370,6 +370,11 @@
       {
         "title": "Corey & Lacy",
         "orientation": "landscape",
+        "url": "/assets/images/gallery/corey-lacy/60.gif"
+      },
+      {
+        "title": "Corey & Lacy",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/corey-lacy/19.jpg"
       },
       {
@@ -571,11 +576,6 @@
         "title": "Corey & Lacy",
         "orientation": "portrait",
         "url": "/assets/images/gallery/corey-lacy/59.jpg"
-      },
-      {
-        "title": "Corey & Lacy",
-        "orientation": "landscape",
-        "url": "/assets/images/gallery/corey-lacy/60.gif"
       }
     ]
   },

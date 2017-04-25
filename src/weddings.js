@@ -27,25 +27,6 @@ app.get('/', function(req, res, next){
   res.render('index', { galleries: galleriesList });
 });
 
-app.get('/sitemap/:name', function(req, res) {
-  var options = {
-    root: __dirname + '/public/',
-    dotfiles: 'deny',
-    headers: {
-        'x-timestamp': Date.now(),
-        'x-sent': true
-    }
-  };
-
-  var fileName = req.params.name;
-  res.sendFile(fileName, options, function (err) {
-    if (err) {
-      console.log(err);
-      res.status(err.status).end();
-    }
-  });
-});
-
 app.get('/about', function(req, res){
   res.render('about');
 });

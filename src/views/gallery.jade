@@ -12,6 +12,14 @@ block content
     if gallery.has_gallery
       for item in gallery.images
         if item.orientation === "portrait"
-          img.animate.gallery__item.gallery__item--portrait(data-img-src="#{item.url}" alt="#{item.title}")
+          .gallery__item.gallery__item--portrait.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+        else if item.orientation === "portrait-full"
+          .gallery__item.gallery__item--portrait-full.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
         else
-          img.animate.gallery__item(data-img-src="#{item.url}" alt="#{item.title}")
+          .gallery__item.gallery__item--landscape.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")

@@ -1364,30 +1364,38 @@
 	    (function () {
 	
 	      var ImageLoader = __webpack_require__(/*! properjs-imageloader */ 18);
-	      var galleryImages = document.querySelectorAll(".gallery__item");
+	      var galleryItems = document.querySelectorAll(".gallery__item");
+	      var galleryItemsArray = [].concat(_toConsumableArray(galleryItems));
+	      var galleryImages = document.querySelectorAll(".gallery__image");
+	      var galleryImagesArray = [].concat(_toConsumableArray(galleryImages));
 	      var galleryVideo = document.querySelector(".gallery__video");
-	      var galleryArray = [].concat(_toConsumableArray(galleryImages));
 	      var ticking = false;
 	      var i = void 0;
 	
-	      // let imageOrientation = function(image) {
-	      //   if (image.clientWidth > image.clientHeight) {
-	      //     image.classList.add("gallery__item--landscape");
-	      //   } else {
-	      //     image.classList.add("gallery__item--portrait");
-	      //   }
+	      var imageOrientation = function imageOrientation(image) {
+	        console.log("width", image.clientWidth);
+	        console.log("height", image.clientHeight);
+	        if (image.clientWidth > image.clientHeight) {
+	          image.classList.add("gallery__item--landscape");
+	        } else {
+	          image.classList.add("gallery__item--portrait");
+	        }
+	      };
+	
+	      // for (var i = 0; i < galleryItemsArray.length; i++) {
+	      //   imageOrientation(galleryItemsArray[i]);
 	      // }
 	
 	      window.setTimeout(function () {
 	        if (galleryVideo) {
 	          galleryVideo.classList.add('is-active');
 	        }
-	        galleryArray[0].classList.add('is-active');
-	        galleryArray[1].classList.add('is-active');
+	        galleryItemsArray[0].classList.add('is-active');
+	        galleryItemsArray[1].classList.add('is-active');
 	      }, 500);
 	
 	      var imgLoader = new ImageLoader({
-	        elements: galleryArray,
+	        elements: galleryImagesArray,
 	        property: "data-img-src",
 	        executor: isElementLoadable
 	      });
@@ -1395,9 +1403,9 @@
 	      var update = function update() {
 	        ticking = false;
 	
-	        for (i = 0; i < galleryArray.length; i++) {
-	          if (isElementInViewport(galleryArray[i])) {
-	            galleryArray[i].classList.add('is-active');
+	        for (i = 0; i < galleryItemsArray.length; i++) {
+	          if (isElementInViewport(galleryItemsArray[i])) {
+	            galleryItemsArray[i].classList.add('is-active');
 	          }
 	        }
 	      };

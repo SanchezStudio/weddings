@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 
+var compression = require('compression');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -14,6 +15,7 @@ var Mailgun = require('mailgun-js');
 var api_key = process.env.MAILGUN;
 var domain = 'mg.sanchezstudio.co';
 
+app.use(compression());
 app.use('/assets', express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

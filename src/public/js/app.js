@@ -1373,8 +1373,6 @@
 	      var i = void 0;
 	
 	      var imageOrientation = function imageOrientation(image) {
-	        console.log("width", image.clientWidth);
-	        console.log("height", image.clientHeight);
 	        if (image.clientWidth > image.clientHeight) {
 	          image.classList.add("gallery__item--landscape");
 	        } else {
@@ -2182,7 +2180,6 @@
 	        var model = getModel();
 	
 	        _axios2.default.post('/submit', model).then(function (res) {
-	          console.log(res);
 	          if (res.data === 'success') {
 	            setState('success', true);
 	            formContainer.classList.add('success');
@@ -2200,7 +2197,6 @@
 	        if (validate()) {
 	          send();
 	        } else {
-	          console.log(state.errors);
 	          setState('error', true);
 	        }
 	        setState('submitting', false);

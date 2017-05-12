@@ -82,7 +82,6 @@ import axios from 'axios';
 
       axios.post('/submit', model)
         .then((res) => {
-          console.log(res);
           if (res.data === 'success') {
             setState( 'success', true );
             formContainer.classList.add('success');
@@ -101,7 +100,6 @@ import axios from 'axios';
       if (validate()) {
         send();
       } else {
-        console.log(state.errors);
         setState( 'error', true );
       }
       setState('submitting', false);

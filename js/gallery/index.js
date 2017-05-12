@@ -15,8 +15,6 @@ let { isElementInViewport, isElementLoadable, throttle } = core.util.default;
     let i;
 
     let imageOrientation = function(image) {
-      console.log("width", image.clientWidth);
-      console.log("height", image.clientHeight);
       if (image.clientWidth > image.clientHeight) {
         image.classList.add("gallery__item--landscape");
       } else {

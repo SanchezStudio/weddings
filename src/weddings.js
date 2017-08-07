@@ -61,11 +61,11 @@ app.post('/submit', function(req,res) {
 
   var data = {
   //Specify email data
-    from: model.email,
+    from: 'weddings@sanchezstudio.co',
   //The email to contact
     to: 'weddings@sanchezstudio.co',
   //Subject and text data
-    subject: model.name,
+    subject: model.name + ' ' + model.email,
     html: model.message
   }
 

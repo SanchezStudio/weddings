@@ -176,7 +176,7 @@
   },
   "jessie-and-josh": {
     "title": "Jessie & Josh",
-    "description": "June 3, 2017 • Lancaster, Ohio",
+    "description": "June 4, 2017 • Lancaster, Ohio",
     "slug": "jessie-and-josh",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/jessie-josh/thumbnail.jpg",
@@ -316,7 +316,7 @@
   },
   "michelle-and-mark": {
     "title": "Michelle & Mark",
-    "description": "June 2, 2017 • Columbus, Ohio",
+    "description": "June 3, 2016 • Columbus, Ohio",
     "slug": "michelle-and-mark",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/michelle-mark/thumbnail.jpg",
@@ -344,7 +344,7 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/05.jpg"
       },
       {
@@ -359,12 +359,12 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/08.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/09.jpg"
       },
       {
@@ -384,22 +384,22 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/13.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/14.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/15.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/16.jpg"
       },
       {
@@ -419,17 +419,17 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/20.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/21.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/22.jpg"
       },
       {
@@ -454,12 +454,12 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/27.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/28.jpg"
       },
       {
@@ -474,7 +474,7 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/31.jpg"
       },
       {
@@ -499,17 +499,17 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/michelle-mark/36.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/37.jpg"
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/38.jpg"
       },
       {
@@ -529,13 +529,383 @@
       },
       {
         "title": "Michelle & Mark",
-        "orientation": "portrait-full",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/42.jpg"
       },
       {
         "title": "Michelle & Mark",
         "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/43.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/44.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/45.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait-full",
+        "url": "/assets/images/gallery/michelle-mark/46.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/47.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/48.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/49.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/50.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/51.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/52.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/53.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/54.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/55.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/56.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/57.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/58.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/59.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/60.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/61.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/62.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait-full",
+        "url": "/assets/images/gallery/michelle-mark/63.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/64.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/65.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/66.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/67.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/68.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait-full",
+        "url": "/assets/images/gallery/michelle-mark/69.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/70.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/71.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/72.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/73.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/74.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/75.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/76.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/77.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/78.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/79.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/80.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/81.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/82.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/83.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/84.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/85.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/86.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/87.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/88.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/89.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/90.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/91.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/92.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/93.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/94.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/95.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/96.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/97.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/98.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/99.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/100.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/101.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/102.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/103.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/104.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/105.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/106.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/107.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/108.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/109.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/110.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/michelle-mark/111.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/112.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/113.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "portrait-full",
+        "url": "/assets/images/gallery/michelle-mark/114.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/115.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/116.jpg"
+      },
+      {
+        "title": "Michelle & Mark",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/michelle-mark/117.jpg"
       }
     ]
   },

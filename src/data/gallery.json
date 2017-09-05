@@ -1199,7 +1199,7 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait",
+        "orientation": "portrait-full",
         "url": "/assets/images/gallery/jen-zach/15.jpg"
       },
       {
@@ -1209,32 +1209,32 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait-full",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/17.jpg"
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait",
+        "orientation": "portrait-full",
         "url": "/assets/images/gallery/jen-zach/18.jpg"
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/jen-zach/19.jpg"
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait-full",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/jen-zach/20.jpg"
       },
       {
         "title": "Jen & Zach",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/21.jpg"
       },
       {
         "title": "Jen & Zach",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/22.jpg"
       },
       {
@@ -1259,7 +1259,7 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/jen-zach/27.jpg"
       },
       {
@@ -1269,7 +1269,7 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/29.jpg"
       },
       {
@@ -1294,7 +1294,7 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "portrait",
+        "orientation": "landscape",
         "url": "/assets/images/gallery/jen-zach/34.jpg"
       },
       {
@@ -1304,7 +1304,7 @@
       },
       {
         "title": "Jen & Zach",
-        "orientation": "landscape",
+        "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/36.jpg"
       },
       {
@@ -1336,16 +1336,6 @@
         "title": "Jen & Zach",
         "orientation": "portrait",
         "url": "/assets/images/gallery/jen-zach/42.jpg"
-      },
-      {
-        "title": "Jen & Zach",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/jen-zach/43.jpg"
-      },
-      {
-        "title": "Jen & Zach",
-        "orientation": "portrait",
-        "url": "/assets/images/gallery/jen-zach/44.jpg"
       }
     ]
   },

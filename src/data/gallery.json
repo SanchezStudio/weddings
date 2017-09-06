@@ -316,7 +316,7 @@
   },
   "michelle-and-mark": {
     "title": "Michelle & Mark",
-    "description": "June 3, 2016 • Columbus, Ohio",
+    "description": "June 3, 2017 • Columbus, Ohio",
     "slug": "michelle-and-mark",
     "has_video": false,
     "thumbnail": "/assets/images/gallery/michelle-mark/thumbnail.jpg",
@@ -906,6 +906,571 @@
         "title": "Michelle & Mark",
         "orientation": "landscape",
         "url": "/assets/images/gallery/michelle-mark/117.jpg"
+      }
+    ]
+  },
+  "ali-and-eddy": {
+    "title": "Ali & Eddy",
+    "description": "April 22, 2017 • Columbus, Ohio",
+    "slug": "ali-and-eddy",
+    "has_video": false,
+    "thumbnail": "/assets/images/gallery/ali-eddy/thumbnail.jpg",
+    "has_gallery": true,
+    "images": [
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/01.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/02.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/03.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/04.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/05.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/06.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/07.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/08.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/09.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/10.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/11.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/12.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/13.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/14.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/15.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/16.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/17.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/18.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/19.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/20.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/21.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/22.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/23.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/24.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/25.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/26.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/27.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/28.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/29.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/30.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/31.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/33.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/34.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/35.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/36.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/37.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/38.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/39.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/40.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/41.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/42.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/43.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/44.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/45.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/46.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/47.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/48.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/49.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/50.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/51.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/52.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/53.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/54.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/55.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/56.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/57.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/58.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/59.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/60.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/61.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/62.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/63.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/64.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/65.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/66.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/67.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/68.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/69.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/70.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/71.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/72.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/73.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/74.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/75.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/76.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/77.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/78.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/79.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/80.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/81.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/82.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/83.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/84.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/85.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/86.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/87.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/88.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/89.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/90.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/91.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/92.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/93.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/94.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/95.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/96.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/97.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/98.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/99.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/100.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/101.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/102.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/103.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/104.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/105.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "landscape",
+        "url": "/assets/images/gallery/ali-eddy/106.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/107.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/108.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/109.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/110.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/111.jpg"
+      },
+      {
+        "title": "Ali & Eddy",
+        "orientation": "portrait",
+        "url": "/assets/images/gallery/ali-eddy/112.jpg"
       }
     ]
   },

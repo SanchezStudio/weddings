@@ -38,14 +38,15 @@
     vertical-align: middle;
     width: 100%;
     @media screen and (min-width: 768px) {
-      &--portrait { width: 50%; }
+      &--portrait, &--landscape-half { width: 50%; }
       &--landscape, &--portrait-full { width: 100% }
     }
   }
   &__inner {
     position: relative;
     height: 0;
-    .gallery__item--landscape & {
+    .gallery__item--landscape &,
+    .gallery__item--landscape-half & {
       padding-bottom: percentage(1333 / 2000);
     }
     .gallery__item--portrait &,

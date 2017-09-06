@@ -19,6 +19,10 @@ block content
           .gallery__item.gallery__item--portrait-full.animate
             .gallery__inner
               img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+        else if item.orientation === "landscape-half"
+          .gallery__item.gallery__item--landscape-half.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
         else
           .gallery__item.gallery__item--landscape.animate
             .gallery__inner

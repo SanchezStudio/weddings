@@ -1,4 +1,13 @@
 {
+  "meredith-and-dale": {
+    "title": "Meredith & Dale",
+    "description": "May 20, 2017 • Columbus, Ohio",
+    "slug": "meredith-and-dale",
+    "has_video": true,
+    "video_url": "235166349",
+    "thumbnail": "/assets/images/gallery/meredith-dale/thumbnail.jpg",
+    "has_gallery": false
+  },
   "michelle-and-steve": {
     "title": "Michelle & Steve",
     "description": "June 11, 2017 • Columbus, Ohio",

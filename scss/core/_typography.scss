@@ -38,11 +38,13 @@ p, li {
   color: #fff;
   width: auto;
   text-align: center;
-  padding: 10px;
+  padding: 10px 15px;
   font-family: $serif;
   cursor: pointer;
   transition: 400ms ease;
+  text-decoration: none;
   &:hover { background-color: darken($grey, 10%); }
+  &:hover, &:visited, &:active, &:focus { color: #fff; }
 }
 
 strong {

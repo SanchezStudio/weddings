@@ -1,4 +1,13 @@
 {
+  "keren-and-matt": {
+    "title": "Keren & Matt",
+    "description": "May 30, 2017 • Columbus, Ohio",
+    "slug": "keren-and-matt",
+    "has_video": true,
+    "video_url": "239586848",
+    "thumbnail": "/assets/images/gallery/keren-matt/thumbnail.jpg",
+    "has_gallery": false
+  },
   "meredith-and-dale": {
     "title": "Meredith & Dale",
     "description": "May 20, 2017 • Columbus, Ohio",

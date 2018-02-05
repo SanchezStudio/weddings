@@ -1,12 +1,114 @@
-!function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,e),o.loaded=!0,o.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";n(34),n(32),n(29),n(33),n(45).polyfill()},function(t,e,n){"use strict";function r(t){return"[object Array]"===x.call(t)}function o(t){return"[object ArrayBuffer]"===x.call(t)}function i(t){return"undefined"!=typeof FormData&&t instanceof FormData}function a(t){var e;return e="undefined"!=typeof ArrayBuffer&&ArrayBuffer.isView?ArrayBuffer.isView(t):t&&t.buffer&&t.buffer instanceof ArrayBuffer}function s(t){return"string"==typeof t}function u(t){return"number"==typeof t}function c(t){return"undefined"==typeof t}function l(t){return null!==t&&"object"==typeof t}function f(t){return"[object Date]"===x.call(t)}function d(t){return"[object File]"===x.call(t)}function h(t){return"[object Blob]"===x.call(t)}function p(t){return"[object Function]"===x.call(t)}function m(t){return l(t)&&p(t.pipe)}function v(t){return"undefined"!=typeof URLSearchParams&&t instanceof URLSearchParams}function y(t){return t.replace(/^\s*/,"").replace(/\s*$/,"")}function g(){return"undefined"!=typeof window&&"undefined"!=typeof document&&"function"==typeof document.createElement}function w(t,e){if(null!==t&&"undefined"!=typeof t)if("object"==typeof t||r(t)||(t=[t]),r(t))for(var n=0,o=t.length;n<o;n++)e.call(null,t[n],n,t);else for(var i in t)t.hasOwnProperty(i)&&e.call(null,t[i],i,t)}function _(){function t(t,n){"object"==typeof e[n]&&"object"==typeof t?e[n]=_(e[n],t):e[n]=t}for(var e={},n=0,r=arguments.length;n<r;n++)w(arguments[n],t);return e}function b(t,e,n){return w(e,function(e,r){n&&"function"==typeof e?t[r]=E(e,n):t[r]=e}),t}var E=n(6),x=Object.prototype.toString;t.exports={isArray:r,isArrayBuffer:o,isFormData:i,isArrayBufferView:a,isString:s,isNumber:u,isObject:l,isUndefined:c,isDate:f,isFile:d,isBlob:h,isFunction:p,isStream:m,isURLSearchParams:v,isStandardBrowserEnv:g,forEach:w,merge:_,extend:b,trim:y}},function(t,e){/*!
-	 *
-	 *
-	 * @Hobo-utils
-	 * @author: kitajchuk
-	 *
-	 *
-	 */
-var n="0.3.6",r=/^data-/,o=/\D/g,i=/-([\da-z])/gi,a=/^</,s=/^\[|\{/,u=/^<\!DOCTYPE\shtml>/i,c=/^\s+|\s+$/g,l=function(t){return t.replace(c,"")},f=function(t){return t.replace(i,function(t,e){return e.toUpperCase()})},d=function(){return"hobo"+(n+Math.random()).replace(o,"")},h=function(t){return[].slice.call(t)},p=function(t){t.hoboDataMap||(t.hoboDataMap={}),t.dataset?E(t):t.attributes&&b(t)},m=function(t,e){var n,r;for(r in t)t.hasOwnProperty(r)&&(n=f(r),e.hoboDataMap[n]=t[r])},v=function(t,e){for(var n in e.hoboDataMap)e.hoboDataMap.hasOwnProperty(n)&&!t[n]&&(t[n]=e.hoboDataMap[n])},y=function(t,e){var n=null;return t=f(t),e.hoboDataMap&&e.hoboDataMap[t]&&(n=e.hoboDataMap[t]),n},g=function(t,e){t=f(t),e.hoboDataMap&&e.hoboDataMap[t]&&delete e.hoboDataMap[t]},w=function(t,e){var n,r,o,i=[];for(o in t)t.hasOwnProperty(o)&&(n=e?e+"["+o+"]":o,r=t[o],"object"==typeof r?i.push(w(r,n)):i.push(encodeURIComponent(n)+"="+encodeURIComponent(r)));return i.join("&")},_=function(t){if(s.test(t))try{t=JSON.parse(t)}catch(e){throw e}return t},b=function(t){var e=t.attributes.length;for(e;e--;)if(r.test(t.attributes[e].name)){var n=f(t.attributes[e].name.replace(r,""));t.hoboDataMap[n]=_(t.attributes[e].value)}},E=function(t){for(var e in t.dataset)t.dataset.hasOwnProperty(e)&&(t.hoboDataMap[e]=_(t.dataset[e]))};t.exports={version:n,rData:r,rDigit:o,rTag:a,rJson:s,rDocType:u,rFront2Back:c,trimString:l,camelCase:f,makeId:d,makeArray:h,makeData:p,storeData:m,retrieveData:y,mergeData:v,removeData:g,serializeData:w}},function(t,e,n){/*!
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/*!*********************!*\
+  !*** ./js/index.js ***!
+  \*********************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	__webpack_require__(/*! ./navigation/index.js */ 1);
+	
+	__webpack_require__(/*! ./gallery/index.js */ 17);
+	
+	__webpack_require__(/*! ./home/index.js */ 20);
+	
+	__webpack_require__(/*! smoothscroll-polyfill */ 21).polyfill();
+	//import './contact/index.js';
+
+/***/ },
+/* 1 */
+/*!********************************!*\
+  !*** ./js/navigation/index.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var _properjsHobo = __webpack_require__(/*! properjs-hobo */ 2);
+	
+	var _properjsHobo2 = _interopRequireDefault(_properjsHobo);
+	
+	var _Menu = __webpack_require__(/*! ../Menu */ 13);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(function () {
+	
+	  var nav = new _Menu2.default((0, _properjsHobo2.default)(".nav"));
+	  var toggle = (0, _properjsHobo2.default)(".nav__toggle");
+	  var storyItem = (0, _properjsHobo2.default)(".nav__item--stories");
+	
+	  var onClick = function onClick(e) {
+	    e.preventDefault();
+	    nav.toggle();
+	  };
+	
+	  var itemClick = function itemClick(e) {
+	    // e.preventDefault();
+	    nav.toggle();
+	  };
+	
+	  toggle.on("click", function (e) {
+	    onClick(e);
+	  });
+	  storyItem.on("click", function (e) {
+	    itemClick(e);
+	  });
+	})();
+
+/***/ },
+/* 2 */
+/*!*********************************!*\
+  !*** ./~/properjs-hobo/hobo.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
 	 *
 	 *
 	 * @method hobo
@@ -26,7 +128,64 @@ var n="0.3.6",r=/^data-/,o=/\D/g,i=/-([\da-z])/gi,a=/^</,s=/^\[|\{/,u=/^<\!DOCTY
 	 *
 	 *
 	 */
-!function(e){t.exports=e()}(function(){var t=n(9);n(2);return t.prototype.on=n(41),t.prototype.off=n(40),t.prototype.data=n(38),t.prototype.find=n(39),t.prototype.addClass=n(36),t.prototype.removeClass=n(42),hobo=function(e,n){return new t(e,n)},hobo.ajax=n(37),hobo})},function(t,e,n){(function(e){"use strict";var r=n(1),o=n(16),i=n(20),a=n(26),s=n(24),u=n(5),c="undefined"!=typeof window&&window.btoa||n(19);t.exports=function(t){return new Promise(function(l,f){var d=t.data,h=t.headers;r.isFormData(d)&&delete h["Content-Type"];var p=new XMLHttpRequest,m="onreadystatechange",v=!1;if("test"===e.env.NODE_ENV||"undefined"==typeof window||!window.XDomainRequest||"withCredentials"in p||s(t.url)||(p=new window.XDomainRequest,m="onload",v=!0,p.onprogress=function(){},p.ontimeout=function(){}),t.auth){var y=t.auth.username||"",g=t.auth.password||"";h.Authorization="Basic "+c(y+":"+g)}if(p.open(t.method.toUpperCase(),i(t.url,t.params,t.paramsSerializer),!0),p.timeout=t.timeout,p[m]=function(){if(p&&(4===p.readyState||v)&&0!==p.status){var e="getAllResponseHeaders"in p?a(p.getAllResponseHeaders()):null,n=t.responseType&&"text"!==t.responseType?p.response:p.responseText,r={data:n,status:1223===p.status?204:p.status,statusText:1223===p.status?"No Content":p.statusText,headers:e,config:t,request:p};o(l,f,r),p=null}},p.onerror=function(){f(u("Network Error",t)),p=null},p.ontimeout=function(){f(u("timeout of "+t.timeout+"ms exceeded",t,"ECONNABORTED")),p=null},r.isStandardBrowserEnv()){var w=n(22),_=(t.withCredentials||s(t.url))&&t.xsrfCookieName?w.read(t.xsrfCookieName):void 0;_&&(h[t.xsrfHeaderName]=_)}if("setRequestHeader"in p&&r.forEach(h,function(t,e){"undefined"==typeof d&&"content-type"===e.toLowerCase()?delete h[e]:p.setRequestHeader(e,t)}),t.withCredentials&&(p.withCredentials=!0),t.responseType)try{p.responseType=t.responseType}catch(b){if("json"!==p.responseType)throw b}"function"==typeof t.onDownloadProgress&&p.addEventListener("progress",t.onDownloadProgress),"function"==typeof t.onUploadProgress&&p.upload&&p.upload.addEventListener("progress",t.onUploadProgress),void 0===d&&(d=null),p.send(d)})}}).call(e,n(8))},function(t,e,n){"use strict";var r=n(15);t.exports=function(t,e,n,o){var i=new Error(t);return r(i,e,n,o)}},function(t,e){"use strict";t.exports=function(t,e){return function(){for(var n=new Array(arguments.length),r=0;r<n.length;r++)n[r]=arguments[r];return t.apply(e,n)}}},function(t,e,n){"use strict";function r(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e["default"]=t,e}function o(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0}),e.util=e.dom=void 0;var i=n(30),a=o(i),s=n(31),u=r(s);e.dom=a["default"],e.util=u},function(t,e){function n(){throw new Error("setTimeout has not been defined")}function r(){throw new Error("clearTimeout has not been defined")}function o(t){if(l===setTimeout)return setTimeout(t,0);if((l===n||!l)&&setTimeout)return l=setTimeout,setTimeout(t,0);try{return l(t,0)}catch(e){try{return l.call(null,t,0)}catch(e){return l.call(this,t,0)}}}function i(t){if(f===clearTimeout)return clearTimeout(t);if((f===r||!f)&&clearTimeout)return f=clearTimeout,clearTimeout(t);try{return f(t)}catch(e){try{return f.call(null,t)}catch(e){return f.call(this,t)}}}function a(){m&&h&&(m=!1,h.length?p=h.concat(p):v=-1,p.length&&s())}function s(){if(!m){var t=o(a);m=!0;for(var e=p.length;e;){for(h=p,p=[];++v<e;)h&&h[v].run();v=-1,e=p.length}h=null,m=!1,i(t)}}function u(t,e){this.fun=t,this.array=e}function c(){}var l,f,d=t.exports={};!function(){try{l="function"==typeof setTimeout?setTimeout:n}catch(t){l=n}try{f="function"==typeof clearTimeout?clearTimeout:r}catch(t){f=r}}();var h,p=[],m=!1,v=-1;d.nextTick=function(t){var e=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)e[n-1]=arguments[n];p.push(new u(t,e)),1!==p.length||m||o(s)},u.prototype.run=function(){this.fun.apply(null,this.array)},d.title="browser",d.browser=!0,d.env={},d.argv=[],d.version="",d.versions={},d.on=c,d.addListener=c,d.once=c,d.off=c,d.removeListener=c,d.removeAllListeners=c,d.emit=c,d.binding=function(t){throw new Error("process.binding is not supported")},d.cwd=function(){return"/"},d.chdir=function(t){throw new Error("process.chdir is not supported")},d.umask=function(){return 0}},function(t,e,n){/*!
+	(function ( factory ) {
+	
+	    if ( true ) {
+	        module.exports = factory();
+	
+	    } else if ( typeof window !== "undefined" ) {
+	        window.hobo = factory();
+	    }
+	
+	})(function () {
+	
+	    var Hobo = __webpack_require__( /*! ./lib/Hobo */ 3 ),
+	        utils = __webpack_require__( /*! ./lib/utils */ 4 );
+	
+	
+	    // Core Hobo methods:
+	    Hobo.prototype.on = __webpack_require__( /*! ./lib/core/on */ 5 );
+	    Hobo.prototype.off = __webpack_require__( /*! ./lib/core/off */ 7 );
+	    Hobo.prototype.data = __webpack_require__( /*! ./lib/core/data */ 8 );
+	    Hobo.prototype.find = __webpack_require__( /*! ./lib/core/find */ 9 );
+	    Hobo.prototype.addClass = __webpack_require__( /*! ./lib/core/addClass */ 10 );
+	    Hobo.prototype.removeClass = __webpack_require__( /*! ./lib/core/removeClass */ 11 );
+	
+	
+	    // Extended Hobo methods:
+	    // @hobo-ext
+	
+	
+	    /**
+	     *
+	     * @public
+	     * @method hobo
+	     * @description Wrapper for `Hobo` instances.
+	     * @param {string} selector The parameter passed to `querySelectorAll`
+	     * @param {element} context The Element used to call `querySelectorAll`
+	     *
+	     */
+	    hobo = function ( selector, context ) {
+	        return new Hobo( selector, context );
+	    };
+	
+	
+	    // Attach Hobo utilities to `wrapper` method
+	    hobo.ajax = __webpack_require__( /*! ./lib/core/ajax */ 12 );
+	
+	
+	    return hobo;
+	
+	});
+
+/***/ },
+/* 3 */
+/*!*************************************!*\
+  !*** ./~/properjs-hobo/lib/Hobo.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
 	 *
 	 * 
 	 * @Hobo
@@ -34,16 +193,1244 @@ var n="0.3.6",r=/^data-/,o=/\D/g,i=/-([\da-z])/gi,a=/^</,s=/^\[|\{/,u=/^<\!DOCTY
 	 *
 	 *
 	 */
-var r=n(2),o=[],i=function(t,e){if(this._hobo=r.version,this._context=e&&e.nodeType&&1===e.nodeType?e:document,t===window||t===document||t.nodeType&&1===t.nodeType)this._selector="",t=[t];else if("string"==typeof t)if(t=r.trimString(t),r.rTag.test(t)){t=t.replace(r.rDocType,"");var n=document.createElement("hobo");n.innerHTML=t,t=r.makeArray(n.children),n=null}else this._selector=t,t=r.makeArray(this._context.querySelectorAll(t));else void 0!==t.length&&(this._selector="",t=r.makeArray(t));this._events={},this.length=t.length;for(var o=this.length;o--;)this[o]=t[o];this.forEach(r.makeData)};i.prototype.splice=o.splice,i.prototype.each=o.forEach,i.prototype.forEach=o.forEach,i.prototype.push=o.push,i.prototype.map=o.map,t.exports=i},function(t,e,n){t.exports=n(11)},function(t,e,n){"use strict";function r(t){var e=new a(t),n=i(a.prototype.request,e);return o.extend(n,a.prototype,e),o.extend(n,e),n}var o=n(1),i=n(6),a=n(12),s=r();s.Axios=a,s.create=function(t){return r(t)},s.all=function(t){return Promise.all(t)},s.spread=n(27),t.exports=s,t.exports["default"]=s},function(t,e,n){"use strict";function r(t){this.defaults=i.merge(o,t),this.interceptors={request:new a,response:new a}}var o=n(18),i=n(1),a=n(13),s=n(14),u=n(23),c=n(21);r.prototype.request=function(t){"string"==typeof t&&(t=i.merge({url:arguments[0]},arguments[1])),t=i.merge(o,this.defaults,{method:"get"},t),t.baseURL&&!u(t.url)&&(t.url=c(t.baseURL,t.url));var e=[s,void 0],n=Promise.resolve(t);for(this.interceptors.request.forEach(function(t){e.unshift(t.fulfilled,t.rejected)}),this.interceptors.response.forEach(function(t){e.push(t.fulfilled,t.rejected)});e.length;)n=n.then(e.shift(),e.shift());return n},i.forEach(["delete","get","head"],function(t){r.prototype[t]=function(e,n){return this.request(i.merge(n||{},{method:t,url:e}))}}),i.forEach(["post","put","patch"],function(t){r.prototype[t]=function(e,n,r){return this.request(i.merge(r||{},{method:t,url:e,data:n}))}}),t.exports=r},function(t,e,n){"use strict";function r(){this.handlers=[]}var o=n(1);r.prototype.use=function(t,e){return this.handlers.push({fulfilled:t,rejected:e}),this.handlers.length-1},r.prototype.eject=function(t){this.handlers[t]&&(this.handlers[t]=null)},r.prototype.forEach=function(t){o.forEach(this.handlers,function(e){null!==e&&t(e)})},t.exports=r},function(t,e,n){(function(e){"use strict";var r=n(1),o=n(17);t.exports=function(t){t.headers=t.headers||{},t.data=o(t.data,t.headers,t.transformRequest),t.headers=r.merge(t.headers.common||{},t.headers[t.method]||{},t.headers||{}),r.forEach(["delete","get","head","post","put","patch","common"],function(e){delete t.headers[e]});var i;return"function"==typeof t.adapter?i=t.adapter:"undefined"!=typeof XMLHttpRequest?i=n(4):"undefined"!=typeof e&&(i=n(4)),Promise.resolve(t).then(i).then(function(e){return e.data=o(e.data,e.headers,t.transformResponse),e},function(e){return e&&e.response&&(e.response.data=o(e.response.data,e.response.headers,t.transformResponse)),Promise.reject(e)})}}).call(e,n(8))},function(t,e){"use strict";t.exports=function(t,e,n,r){return t.config=e,n&&(t.code=n),t.response=r,t}},function(t,e,n){"use strict";var r=n(5);t.exports=function(t,e,n){var o=n.config.validateStatus;n.status&&o&&!o(n.status)?e(r("Request failed with status code "+n.status,n.config,null,n)):t(n)}},function(t,e,n){"use strict";var r=n(1);t.exports=function(t,e,n){return r.forEach(n,function(n){t=n(t,e)}),t}},function(t,e,n){"use strict";function r(t,e){!o.isUndefined(t)&&o.isUndefined(t["Content-Type"])&&(t["Content-Type"]=e)}var o=n(1),i=n(25),a=/^\)\]\}',?\n/,s={"Content-Type":"application/x-www-form-urlencoded"};t.exports={transformRequest:[function(t,e){return i(e,"Content-Type"),o.isFormData(t)||o.isArrayBuffer(t)||o.isStream(t)||o.isFile(t)||o.isBlob(t)?t:o.isArrayBufferView(t)?t.buffer:o.isURLSearchParams(t)?(r(e,"application/x-www-form-urlencoded;charset=utf-8"),t.toString()):o.isObject(t)?(r(e,"application/json;charset=utf-8"),JSON.stringify(t)):t}],transformResponse:[function(t){if("string"==typeof t){t=t.replace(a,"");try{t=JSON.parse(t)}catch(e){}}return t}],headers:{common:{Accept:"application/json, text/plain, */*"},patch:o.merge(s),post:o.merge(s),put:o.merge(s)},timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,validateStatus:function(t){return t>=200&&t<300}}},function(t,e){"use strict";function n(){this.message="String contains an invalid character"}function r(t){for(var e,r,i=String(t),a="",s=0,u=o;i.charAt(0|s)||(u="=",s%1);a+=u.charAt(63&e>>8-s%1*8)){if(r=i.charCodeAt(s+=.75),r>255)throw new n;e=e<<8|r}return a}var o="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";n.prototype=new Error,n.prototype.code=5,n.prototype.name="InvalidCharacterError",t.exports=r},function(t,e,n){"use strict";function r(t){return encodeURIComponent(t).replace(/%40/gi,"@").replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+").replace(/%5B/gi,"[").replace(/%5D/gi,"]")}var o=n(1);t.exports=function(t,e,n){if(!e)return t;var i;if(n)i=n(e);else if(o.isURLSearchParams(e))i=e.toString();else{var a=[];o.forEach(e,function(t,e){null!==t&&"undefined"!=typeof t&&(o.isArray(t)&&(e+="[]"),o.isArray(t)||(t=[t]),o.forEach(t,function(t){o.isDate(t)?t=t.toISOString():o.isObject(t)&&(t=JSON.stringify(t)),a.push(r(e)+"="+r(t))}))}),i=a.join("&")}return i&&(t+=(t.indexOf("?")===-1?"?":"&")+i),t}},function(t,e){"use strict";t.exports=function(t,e){return t.replace(/\/+$/,"")+"/"+e.replace(/^\/+/,"")}},function(t,e,n){"use strict";var r=n(1);t.exports=r.isStandardBrowserEnv()?function(){return{write:function(t,e,n,o,i,a){var s=[];s.push(t+"="+encodeURIComponent(e)),r.isNumber(n)&&s.push("expires="+new Date(n).toGMTString()),r.isString(o)&&s.push("path="+o),r.isString(i)&&s.push("domain="+i),a===!0&&s.push("secure"),document.cookie=s.join("; ")},read:function(t){var e=document.cookie.match(new RegExp("(^|;\\s*)("+t+")=([^;]*)"));return e?decodeURIComponent(e[3]):null},remove:function(t){this.write(t,"",Date.now()-864e5)}}}():function(){return{write:function(){},read:function(){return null},remove:function(){}}}()},function(t,e){"use strict";t.exports=function(t){return/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(t)}},function(t,e,n){"use strict";var r=n(1);t.exports=r.isStandardBrowserEnv()?function(){function t(t){var e=t;return n&&(o.setAttribute("href",e),e=o.href),o.setAttribute("href",e),{href:o.href,protocol:o.protocol?o.protocol.replace(/:$/,""):"",host:o.host,search:o.search?o.search.replace(/^\?/,""):"",hash:o.hash?o.hash.replace(/^#/,""):"",hostname:o.hostname,port:o.port,pathname:"/"===o.pathname.charAt(0)?o.pathname:"/"+o.pathname}}var e,n=/(msie|trident)/i.test(navigator.userAgent),o=document.createElement("a");return e=t(window.location.href),function(n){var o=r.isString(n)?t(n):n;return o.protocol===e.protocol&&o.host===e.host}}():function(){return function(){return!0}}()},function(t,e,n){"use strict";var r=n(1);t.exports=function(t,e){r.forEach(t,function(n,r){r!==e&&r.toUpperCase()===e.toUpperCase()&&(t[e]=n,delete t[r])})}},function(t,e,n){"use strict";var r=n(1);t.exports=function(t){var e,n,o,i={};return t?(r.forEach(t.split("\n"),function(t){o=t.indexOf(":"),e=r.trim(t.substr(0,o)).toLowerCase(),n=r.trim(t.substr(o+1)),e&&(i[e]=i[e]?i[e]+", "+n:n)}),i):i}},function(t,e){"use strict";t.exports=function(t){return function(e){return t.apply(null,e)}}},function(t,e,n){"use strict";function r(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e["default"]=t,e}function o(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var i=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),a=n(7),s=r(a),u=function(){function t(e){o(this,t),this.$node=e,this.isOpen=!1}return i(t,[{key:"open",value:function(){this.isOpen=!0,s.dom.html.addClass("is-menu-open")}},{key:"close",value:function(){this.isOpen=!1,s.dom.html.removeClass("is-menu-open")}},{key:"toggle",value:function(){this.isOpen?this.close():this.open()}}]),t}();e["default"]=u},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(10),i=r(o);!function(){var t=document.getElementById("contact");t&&!function(){var t=document.getElementById("contact-form"),e=document.getElementById("form-container"),n=document.getElementsByTagName("input"),r=document.getElementsByTagName("textarea"),o={submitting:!1,success:!1,error:!1,errors:{}},a=function(t,e,n){o[t]=e,n&&n()},s=function(t,e){var n=document.getElementById(t);n.classList.add("error"),n.innerHTML=e},u=function(){var t={name:n.name.value,email:n.email.value,message:r.message.value};return t},c=function(){var t=o.errors={},e=new RegExp(/^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/),n=!0,r=u();return["name","email","message"].map(function(e){r[e]?r[e].length>1e4?(t[e]="is too long",n=!1,s(e,t[e])):s(e,""):(t[e]="is required",n=!1,s(e,t[e]))}),["email"].map(function(o){e.test(r[o])?s(o,""):(t[o]="not a valid email",n=!1,s(o,t[o]))}),n},l=function(){var t=u();i["default"].post("/submit",t).then(function(t){"success"===t.data&&(a("success",!0),e.classList.add("success"))})["catch"](function(){a("error",!0),e.classList.add("error")})},f=function(t){t.preventDefault(),a("submitting",!0),e.classList.add("submitting"),c()?l():a("error",!0),a("submitting",!1),e.classList.remove("submitting")};t.addEventListener("submit",f,!1)}()}()},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var o=n(3),i=r(o),a={doc:(0,i["default"])(document),html:(0,i["default"])(document.documentElement),body:(0,i["default"])(document.body),header:(0,i["default"])(".header"),nav:(0,i["default"])(".nav")};e["default"]=a},function(t,e){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=function(t){if(t){var e=t.getBoundingClientRect();return e.top<2*window.innerHeight}},r=function(t){if(t){var e=t.getBoundingClientRect();return e.top<window.innerHeight/1.5&&e.bottom>0}},o=function(t,e,n){var r,o,i,a,s=0,u=Date.now||function(){return(new Date).getTime()};n||(n={});var c=function(){s=n.leading===!1?0:u(),r=null,a=t.apply(o,i),r||(o=i=null)},l=function(){var u=Date.now||function(){return(new Date).getTime()};s||n.leading!==!1||(s=u);var l=e-(u-s);return o=this,i=arguments,l<=0||l>e?(r&&(clearTimeout(r),r=null),s=u,a=t.apply(o,i),r||(o=i=null)):r||n.trailing===!1||(r=setTimeout(c,l)),a};return l.cancel=function(){clearTimeout(r),s=0,r=o=i=null},l};e["default"]={isElementLoadable:n,isElementInViewport:r,throttle:o}},function(t,e,n){"use strict";function r(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e["default"]=t,e}function o(t){if(Array.isArray(t)){for(var e=0,n=Array(t.length);e<t.length;e++)n[e]=t[e];return n}return Array.from(t)}var i=n(7),a=r(i),s=a.util["default"],u=s.isElementInViewport,c=s.isElementLoadable,l=s.throttle;!function(){var t=document.getElementById("gallery");t&&!function(){var t=n(43),e=document.querySelectorAll(".gallery__item"),r=[].concat(o(e)),i=document.querySelectorAll(".gallery__image"),a=[].concat(o(i)),s=document.querySelector(".gallery__video"),f=!1,d=void 0;window.setTimeout(function(){s&&s.classList.add("is-active"),r[0].classList.add("is-active"),r[1].classList.add("is-active")},500);var h=(new t({elements:a,property:"data-img-src",executor:c}),function(){for(f=!1,d=0;d<r.length;d++)u(r[d])&&r[d].classList.add("is-active")}),p=function(){f||window.requestAnimationFrame(h),f=!0},m=function(){p()};window.addEventListener("scroll",l(m,100),!1)}()}()},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(3),i=r(o);!function(){var t=document.getElementById("home");t&&!function(){var t=function(){c=window.scrollY,e()},e=function(){l||window.requestAnimationFrame(n),l=!0},n=function(){l=!1,c>=s-100?o.classList.remove("nav-is-white"):o.classList.add("nav-is-white")},r=(0,i["default"])("#home"),o=document.documentElement,a=(0,i["default"])(".splash"),s=a[0].clientHeight,u=(0,i["default"])(".splash__caret"),c=0,l=!1,f=(0,i["default"])(".nav__item--stories");o.classList.add("nav-is-white");var d=function(t){t.preventDefault(),r[0].scrollIntoView({behavior:"smooth"})};u[0].addEventListener("click",d,!1),f[0].addEventListener("click",d,!1),window.addEventListener("scroll",t,!1)}()}()},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(3),i=r(o),a=n(28),s=r(a);!function(){var t=new s["default"]((0,i["default"])(".nav")),e=(0,i["default"])(".nav__toggle"),n=(0,i["default"])(".nav__item--stories"),r=function(e){e.preventDefault(),t.toggle()},o=function(e){t.toggle()};e.on("click",function(t){r(t)}),n.on("click",function(t){o(t)})}()},function(t,e,n){/*!
+	var utils = __webpack_require__( /*! ./utils */ 4 ),
+	    array = [];
+	
+	
+	/**
 	 *
-	 * Event / Animation cycle manager
+	 * @class Hobo
+	 * @classdesc A very small, modular DOM utility for modern web apps.
+	 * @param {string} selector The goods - String, Element, Collection.
+	 * @param {element} context The Element used to call `querySelectorAll`
 	 *
-	 * @Controller
+	 */
+	var Hobo = function ( selector, context ) {
+	    // Hobo version?
+	    this._hobo = utils.version;
+	
+	    // Hobo context
+	    this._context = (context && context.nodeType && context.nodeType === 1 ? context : document);
+	
+	    // Hobo selector / elements
+	    // Hobo supports a mixed selector argument
+	
+	    // Handle Window
+	    // Handle Document
+	    // Handle DOMElement
+	    if ( selector === window || selector === document || (selector.nodeType && selector.nodeType === 1) ) {
+	        this._selector = "";
+	        selector = [ selector ];
+	
+	    // Handle String
+	    } else if ( typeof selector === "string" ) {
+	        // Trim trailing whitespace from the string
+	        selector = utils.trimString( selector );
+	
+	        // Handle string html => Element creation
+	        if ( utils.rTag.test( selector ) ) {
+	            // Then remove the doctype - `<!DOCTYPE html>`
+	            selector = selector.replace( utils.rDocType, "" );
+	
+	            // Create a dummy `hobo` element
+	            // Dump the HTML payload in the `hobo` element
+	            // Extract the elements from the `hobo` element
+	            var el = document.createElement( "hobo" );
+	                el.innerHTML = selector;
+	
+	            // Format elements as a true Array
+	            selector = utils.makeArray( el.children );
+	
+	            el = null;
+	
+	        // Handle string selector
+	        } else {
+	            this._selector = selector;
+	            selector = utils.makeArray( this._context.querySelectorAll( selector ) );
+	        }
+	
+	    // Handle Collection: NodeList, HTMLCollection, Array
+	    } else if ( selector.length !== undefined ) {
+	        this._selector = "";
+	        selector = utils.makeArray( selector );
+	    }
+	
+	    // Hobo events?
+	    this._events = {};
+	
+	    // Hobo length?
+	    this.length = selector.length;
+	
+	    // Hobo elements?
+	    for ( var i = this.length; i--; ) {
+	        this[ i ] = selector[ i ];
+	    }
+	
+	    // Initial mapping of each nodes data.
+	    // Transfer {DOMStringMap} => {hoboDataMap}
+	    this.forEach( utils.makeData );
+	};
+	
+	
+	// Shim Array-like presentation in console
+	Hobo.prototype.splice = array.splice;
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @method forEach
+	 * @param {function} callback The method called on each iteration
+	 * @memberof Hobo
+	 * @description Make sure Hobo is iterable like an Array
+	 *
+	 */
+	Hobo.prototype.each = array.forEach;
+	Hobo.prototype.forEach = array.forEach;
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @method push
+	 * @param {?} element element1, ..., elementN
+	 * @memberof Hobo
+	 * @description Make sure Hobo is pushable like an Array
+	 *
+	 */
+	Hobo.prototype.push = array.push;
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @method map
+	 * @param {function} callback The method called for each element
+	 * @memberof Hobo
+	 * @description Make sure Hobo is mappable like an Array
+	 *
+	 */
+	Hobo.prototype.map = array.map;
+	
+	
+	// Export the main Hobo Class :D
+	module.exports = Hobo;
+
+/***/ },
+/* 4 */
+/*!**************************************!*\
+  !*** ./~/properjs-hobo/lib/utils.js ***!
+  \**************************************/
+/***/ function(module, exports) {
+
+	/*!
+	 *
+	 *
+	 * @Hobo-utils
 	 * @author: kitajchuk
 	 *
 	 *
 	 */
-!function(e){t.exports=e()}(function(){var t=window.requestAnimationFrame,e=window.cancelAnimationFrame,n=function(){return this.init.apply(this,arguments)};return n.prototype={constructor:n,init:function(){this._handlers={},this._uid=0,this._started=!1,this._paused=!1,this._cycle=null},go:function(e){if(this._started&&this._cycle)return this;this._started=!0;var n=this,r=function(){n._cycle=t(r),n._started&&"function"==typeof e&&e()};r()},pause:function(){return this._paused=!0,this},play:function(){return this._paused=!1,this},stop:function(){return e(this._cycle),this._paused=!1,this._started=!1,this._cycle=null,this},on:function(t,e){var n=t.split(" ");e._jsControllerID=this.getUID();for(var r=n.length;r--;)"function"==typeof e&&(this._handlers[n[r]]||(this._handlers[n[r]]=[]),this._handlers[n[r]].push(e));return this},off:function(t,e){return this._handlers[t]?(e?this._off(t,e):this._offed(t),this):this},fire:function(t){if(!this._handlers[t])return this;for(var e=[].slice.call(arguments,1),n=this._handlers[t].length;n--;)this._handlers[t][n].apply(this,e);return this},getUID:function(){return this._uid=this._uid+1,this._uid},_off:function(t,e){for(var n=0,r=this._handlers[t].length;n<r;n++)if(e._jsControllerID===this._handlers[t][n]._jsControllerID){this._handlers[t].splice(n,1);break}},_offed:function(t){for(var e=this._handlers[t].length;e--;)this._handlers[t][e]=null;delete this._handlers[t]}},n})},function(t,e,n){var r=n(2);t.exports=function(t){return this.forEach(function(e){var n=t.split(" "),o=e.className.split(" ");n.forEach(function(t){o.indexOf(t)===-1&&o.push(t)}),e.className=r.trimString(o.join(" "))}),this}},function(t,e,n){var r=n(2);t.exports=function(t){var e=t.data||null,n=t.dataType||"html",o=(t.method||"GET").toUpperCase(),i=t.url||window.location.href,a=t.headers||null;return!e||FormData&&e instanceof FormData||(e=r.serializeData(t.data)),"GET"===o&&e&&(i+="?"+e),new Promise(function(s,u){var c=function(t){if("json"===n)try{t=JSON.parse(t)}catch(e){u("Rejecting on JSON.parse error : "+e)}s(t)};if("jsonp"===n){var l=r.makeId()+"JSONP",f=t.jsonp||"callback",d=document.createElement("script");d.src=i+(/\?/.test(i)?"&":"?")+f+"="+l,window[l]=function(t){document.getElementsByTagName("head")[0].removeChild(d),d=null,delete window[l],c(t)},document.getElementsByTagName("head")[0].appendChild(d)}else{var h=new XMLHttpRequest;if(h.open(o,i,!0),a)for(var p in a)a.hasOwnProperty(p)&&h.setRequestHeader(p,a[p]);h.onreadystatechange=function(t){4===this.readyState&&(/^20/.test(this.status)?c(this.responseText):u("Rejecting on server status code : "+this.status))},h.send(e)}})}},function(t,e,n){var r=n(2);t.exports=function(t,e){var n=this,o=null;return"object"==typeof t?(o=t,this.forEach(function(t){r.storeData(o,t)})):e?(o={},o[t]=e,this.forEach(function(t){r.storeData(o,t)})):t?(this.forEach(function(e){null===o&&(o=r.retrieveData(t,e))}),n=o):(o={},this.forEach(function(t){r.mergeData(o,t)}),n=o),n}},function(t,e,n){var r=n(9),o=n(2);t.exports=function(t){var e=this;return this.length>1?(e=[],this.forEach(function(n){e=e.concat(o.makeArray(n.querySelectorAll(t)))}),e=new r(e,null)):e=new r(this.length?t:[],this.length?this[0]:null),e}},function(t,e){var n=function(t,e,n){var r,o;if(n)for(o in this._events[e])this._events[e].hasOwnProperty(o)&&(r=this._events[e][o],r.node===t&&r.callback===n&&(t.removeEventListener(r.type,r.handler,!1),delete this._events[e][o]));else for(o in this._events[e])this._events[e].hasOwnProperty(o)&&(r=this._events[e][o],r.node===t&&(t.removeEventListener(r.type,r.handler,!1),delete this._events[e][o]))},r=function(t){var e,n,r;for(e in this._events)if(this._events.hasOwnProperty(e))for(r in this._events[e])this._events[e].hasOwnProperty(r)&&(n=this._events[e][r],n.node===t&&(t.removeEventListener(n.type,n.handler,!1),delete this._events[e][r]))};t.exports=function(t,e){var o=this;return(t?t.split(" "):[null]).forEach(function(t){o.forEach(function(i){null===t?r.call(o,i):n.call(o,i,t,e)})}),this}},function(t,e,n){var r=n(44),o=n(2),i=function(t,e,n,i){var a=o.makeId()+"EVENT",s=e,u=function(t){var o=n?r(t.target,n,!0):this;if("mouseenter"===e||"mouseleave"===e){var a="mouseenter"===e?t.fromElement:t.toElement;o&&a!==o&&!o.contains(a)&&i.call(o,t)}else o&&i.call(o,t)};"mouseenter"===e?s="mouseover":"mouseleave"===e&&(s="mouseout"),this._events[e][a]={id:a,type:s,node:t,handler:u,callback:i},t.addEventListener(s,u,!1)};t.exports=function(t,e,n){var r=this;return n||(n=e,e=this._selector),t.split(" ").forEach(function(t){r._events[t]||(r._events[t]={}),r.forEach(function(o){i.call(r,o,t,e,n)})}),this}},function(t,e,n){var r=n(2);t.exports=function(t){return this.forEach(function(e){if(void 0===t)e.className="";else{var n=t.split(" "),o=e.className.split(" ");n.forEach(function(t){o.indexOf(t)!==-1&&o.splice(o.indexOf(t),1)}),e.className=r.trimString(o.join(" "))}}),this}},function(t,e,n){/*!
+	var version = "0.3.6",
+	
+	
+	    rData = /^data-/,
+	
+	
+	    rDigit = /\D/g,
+	
+	
+	    rDashAlpha = /-([\da-z])/gi,
+	
+	
+	    rTag = /^</,
+	
+	
+	    rJson = /^\[|\{/,
+	
+	
+	    rDocType = /^<\!DOCTYPE\shtml>/i,
+	
+	
+	    rFront2Back = /^\s+|\s+$/g,
+	
+	
+	    trimString = function ( str ) {
+	        return str.replace( rFront2Back, "" );
+	    },
+	
+	
+	    camelCase = function ( string ) {
+	        return string.replace( rDashAlpha, function ( all, letter ) {
+	            return letter.toUpperCase();
+	        });
+	    },
+	
+	
+	    makeId = function () {
+	        return ("hobo" + ( version + Math.random() ).replace( rDigit, "" ));
+	    },
+	
+	
+	    makeArray = function ( nodes ) {
+	        return [].slice.call( nodes );
+	    },
+	
+	
+	    makeData = function ( node ) {
+	        if ( !node.hoboDataMap ) {
+	            node.hoboDataMap = {};
+	        }
+	
+	        if ( node.dataset ) {
+	            _mapDataset( node );
+	
+	        } else if ( node.attributes ) {
+	            _mapAttributes( node );
+	        }
+	    },
+	
+	
+	    storeData = function ( data, node ) {
+	        var id,
+	            i;
+	
+	        for ( i in data ) {
+	            if ( data.hasOwnProperty( i ) ) {
+	                id = camelCase( i );
+	
+	                node.hoboDataMap[ id ] = data[ i ];
+	            }
+	        }
+	    },
+	
+	
+	    mergeData = function ( data, node ) {
+	        for ( var i in node.hoboDataMap ) {
+	            if ( node.hoboDataMap.hasOwnProperty( i ) && !data[ i ] ) {
+	                data[ i ] = node.hoboDataMap[ i ];
+	            }
+	        }
+	    },
+	
+	
+	    retrieveData = function ( key, node ) {
+	        var ret = null;
+	
+	        // All data mapped into Hobo will be camel-cased
+	        key = camelCase( key );
+	
+	        if ( node.hoboDataMap && node.hoboDataMap[ key ] ) {
+	            ret = node.hoboDataMap[ key ];
+	        }
+	
+	        return ret;
+	    },
+	
+	
+	    removeData = function ( key, node ) {
+	        // All data mapped into Hobo will be camel-cased
+	        key = camelCase( key );
+	
+	        if ( node.hoboDataMap && node.hoboDataMap[ key ] ) {
+	            delete node.hoboDataMap[ key ];
+	        }
+	    },
+	
+	
+	    serializeData = function ( data, prefix ) {
+	        var str = [],
+	            key,
+	            val,
+	            i;
+	
+	        for ( i in data ) {
+	            if ( data.hasOwnProperty( i ) ) {
+	                key = prefix ? (prefix + "[" + i + "]") : i;
+	                val = data[ i ];
+	
+	                if ( typeof val === "object" ) {
+	                    str.push( serializeData( val, key ) );
+	
+	                } else {
+	                    str.push( (encodeURIComponent( key ) + "=" + encodeURIComponent( val )) );
+	                }
+	            }
+	        }
+	
+	        return str.join( "&" );
+	    },
+	
+	
+	    // DOMStringMap camel-cases data- attributes.
+	    // NamedNodeMap is a fallback which supports IE 10.
+	    // Data mapped through Hobo must camel-case as well.
+	
+	
+	    _getDataValue = function ( data ) {
+	        if ( rJson.test( data ) ) {
+	            try {
+	                data = JSON.parse( data );
+	
+	            } catch ( error ) {
+	                throw error;
+	            }
+	        }
+	
+	        return data;
+	    },
+	
+	
+	    // Use {NamedNodeMap}
+	    _mapAttributes = function ( node ) {
+	        var i = node.attributes.length;
+	
+	        for ( i; i--; ) {
+	            if ( rData.test( node.attributes[ i ].name ) ) {
+	                var key = camelCase( node.attributes[ i ].name.replace( rData, "" ) );
+	
+	                node.hoboDataMap[ key ] = _getDataValue( node.attributes[ i ].value );
+	            }
+	        }
+	    },
+	
+	
+	    // Use {DOMStringMap}
+	    _mapDataset = function ( node ) {
+	        for ( var i in node.dataset ) {
+	            if ( node.dataset.hasOwnProperty( i ) ) {
+	                node.hoboDataMap[ i ] = _getDataValue( node.dataset[ i ] );
+	            }
+	        }
+	    };
+	
+	
+	module.exports = {
+	    version: version,
+	    rData: rData,
+	    rDigit: rDigit,
+	    rTag: rTag,
+	    rJson: rJson,
+	    rDocType: rDocType,
+	    rFront2Back: rFront2Back,
+	    trimString: trimString,
+	    camelCase: camelCase,
+	    makeId: makeId,
+	    makeArray: makeArray,
+	    makeData: makeData,
+	    storeData: storeData,
+	    retrieveData: retrieveData,
+	    mergeData: mergeData,
+	    removeData: removeData,
+	    serializeData: serializeData
+	};
+
+/***/ },
+/* 5 */
+/*!****************************************!*\
+  !*** ./~/properjs-hobo/lib/core/on.js ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var matchElement = __webpack_require__( /*! properjs-matchelement */ 6 ),
+	    utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @private
+	 * @method bind
+	 * @description Bind a standard DOM Event.
+	 * @param {element} node
+	 * @param {string} event
+	 * @param {string} selector
+	 * @param {function} callback
+	 * @this {Hobo}
+	 *
+	 */
+	var bind = function ( node, event, selector, callback ) {
+	    // Unique ID for each node event
+	    var eventId = (utils.makeId() + "EVENT"),
+	
+	        // The true event name
+	        eventType = event,
+	
+	        // Normalize event handler with a small wrapper function
+	        eventHandler = function ( e ) {
+	            // Default context is `this` element
+	            var context = (selector ? matchElement( e.target, selector, true ) : this);
+	
+	            // Handle `mouseenter` and `mouseleave`
+	            if ( event === "mouseenter" || event === "mouseleave" ) {
+	                var relatedElement = (event === "mouseenter" ? e.fromElement : e.toElement);
+	
+	                if ( context && ( relatedElement !== context && !context.contains( relatedElement ) ) ) {
+	                    callback.call( context, e );
+	                }
+	
+	            // Fire callback if context element
+	            } else if ( context ) {
+	                callback.call( context, e );
+	            }
+	        };
+	
+	    // Support `mouseenter` and `mouseleave`
+	    if ( event === "mouseenter" ) {
+	        eventType = "mouseover";
+	
+	    } else if ( event === "mouseleave" ) {
+	        eventType = "mouseout";
+	    }
+	
+	    // Each handler/callback pair gets stored in an `events` index
+	    this._events[ event ][ eventId ] = {
+	        id: eventId,
+	        type: eventType,
+	        node: node,
+	        handler: eventHandler,
+	        callback: callback
+	    };
+	
+	    node.addEventListener( eventType, eventHandler, false );
+	};
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method on
+	 * @description Bind a standard DOM Event. Honor delegation as a primary.
+	 * @param {string} events 
+	 * @param {string} selector 
+	 * @param {function} callback
+	 * @returns {Hobo}
+	 *
+	 */
+	module.exports = function ( events, selector, callback ) {
+	    var self = this;
+	
+	    // Normalize `selector` and `callback`
+	    if ( !callback ) {
+	        callback = selector;
+	        selector = this._selector;
+	    }
+	
+	    // Iterate over event(s)
+	    // Space separated event list is supported
+	    // Example: "DOMMouseScroll mousewheel"
+	    events.split( " " ).forEach(function ( event ) {
+	        // Does this event type have an index yet
+	        if ( !self._events[ event ] ) {
+	            self._events[ event ] = {};
+	        }
+	
+	        self.forEach(function ( node ) {
+	            bind.call( self, node, event, selector, callback );
+	        });
+	    });
+	
+	    return this;
+	};
+
+/***/ },
+/* 6 */
+/*!*************************************************!*\
+  !*** ./~/properjs-matchelement/matchElement.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
+	 *
+	 * Use native element selector matching
+	 *
+	 * @matchElement
+	 * @author: kitajchuk
+	 *
+	 */
+	(function ( factory ) {
+	    
+	    if ( true ) {
+	        module.exports = factory();
+	
+	    } else if ( typeof window !== "undefined" ) {
+	        window.matchElement = factory();
+	    }
+	    
+	})(function () {
+	
+	    /**
+	     *
+	     * Use native element selector matching
+	     * @memberof! <global>
+	     * @method matchElement
+	     * @param {object} el the element
+	     * @param {string} selector the selector to match
+	     * @param {boolean} walk should we walk the tree if el is not a match?
+	     * @returns element OR null
+	     *
+	     */
+	    var matchElement = function ( el, selector, walk ) {
+	        var method = ( el.matches ) ? "matches" : ( el.webkitMatchesSelector ) ? 
+	                                      "webkitMatchesSelector" : ( el.mozMatchesSelector ) ? 
+	                                      "mozMatchesSelector" : ( el.msMatchesSelector ) ? 
+	                                      "msMatchesSelector" : ( el.oMatchesSelector ) ? 
+	                                      "oMatchesSelector" : null;
+	
+	        // Try testing the element against the selector
+	        // 0.1 => Method is not undefined
+	        // 0.2 => Element passes method call
+	        if ( method && el[ method ].call( el, selector ) ) {
+	            return el;
+	
+	        // Keep walking up the DOM if we can - only if `walk` flag is `true`
+	        } else if ( walk && el !== document.documentElement && el.parentNode ) {
+	            return matchElement( el.parentNode, selector, walk );
+	
+	        // Otherwise we should not execute an event
+	        } else {
+	            return null;
+	        }
+	    };
+	
+	
+	    return matchElement;
+	
+	});
+
+/***/ },
+/* 7 */
+/*!*****************************************!*\
+  !*** ./~/properjs-hobo/lib/core/off.js ***!
+  \*****************************************/
+/***/ function(module, exports) {
+
+	/**
+	 *
+	 * @private
+	 * @method unbind
+	 * @description Unbind a standard DOM Event.
+	 * @param {element} node
+	 * @param {string} event
+	 * @param {function} callback
+	 * @this {Hobo}
+	 *
+	 */
+	var unbind = function ( node, event, callback ) {
+	    var type,
+	        evo,
+	        id;
+	
+	    // Remove a single handler for an event type
+	    if ( callback ) {
+	        for ( id in this._events[ event ] ) {
+	            if ( this._events[ event ].hasOwnProperty( id ) ) {
+	                evo = this._events[ event ][ id ];
+	
+	                // Match the nodes, Match the callback
+	                if ( evo.node === node && evo.callback === callback ) {
+	                    node.removeEventListener( evo.type, evo.handler, false );
+	
+	                    delete this._events[ event ][ id ];
+	                }
+	            }
+	        }
+	
+	    // Remove all handlers for an event type
+	    } else {
+	        for ( id in this._events[ event ] ) {
+	            if ( this._events[ event ].hasOwnProperty( id ) ) {
+	                evo = this._events[ event ][ id ];
+	
+	                // Match the nodes
+	                if ( evo.node === node ) {
+	                    node.removeEventListener( evo.type, evo.handler, false );
+	
+	                    delete this._events[ event ][ id ];
+	                }
+	            }
+	        }
+	    }
+	};
+	
+	
+	/**
+	 *
+	 * @private
+	 * @method teardown
+	 * @description Unbind all events for instance.
+	 * @param {element} node
+	 * @this {Hobo}
+	 *
+	 */
+	var teardown = function ( node ) {
+	    var type,
+	        evo,
+	        id;
+	
+	    for ( type in this._events ) {
+	        if ( this._events.hasOwnProperty( type ) ) {
+	            for ( id in this._events[ type ] ) {
+	                if ( this._events[ type ].hasOwnProperty( id ) ) {
+	                    evo = this._events[ type ][ id ];
+	
+	                    // Match the nodes
+	                    if ( evo.node === node ) {
+	                        node.removeEventListener( evo.type, evo.handler, false );
+	
+	                        delete this._events[ type ][ id ];
+	                    }
+	                }
+	            }
+	        }
+	    }
+	};
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method off
+	 * @description Un-Bind a standard DOM Event.
+	 * @param {string} events The event type
+	 * @param {function} callback The supplied callback
+	 * @returns {Hobo}
+	 *
+	 */
+	module.exports = function ( events, callback ) {
+	    var self = this;
+	
+	    // Iterate over event(s)
+	    // Space separated event list is supported
+	    // Example: "DOMMouseScroll mousewheel"
+	    // off() can be called with no args, account for this and remove ALL events
+	    (events ? events.split( " " ) : [null]).forEach(function ( event ) {
+	        self.forEach(function ( node ) {
+	            // Explicit `null` check for teardown
+	            if ( event === null ) {
+	                teardown.call( self, node );
+	
+	            } else {
+	                unbind.call( self, node, event, callback );
+	            }
+	        });
+	    });
+	
+	    return this;
+	};
+
+/***/ },
+/* 8 */
+/*!******************************************!*\
+  !*** ./~/properjs-hobo/lib/core/data.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method data
+	 * @description Get / set data values with nodes.
+	 * @param {string} key The access key
+	 * @param {string} value The value to be stored
+	 * @returns {mixed}
+	 *
+	 */
+	module.exports = function ( key, value ) {
+	    // Any `non-unique` data keys resolve to the first unique occurrence
+	    // Exactly how jQuery handles `.data( ... )` on multi-node collections
+	
+	    var ret = this,
+	        obj = null;
+	
+	    // Storing data from an Object
+	    if ( typeof key === "object" ) {
+	        obj = key;
+	
+	        this.forEach(function ( node ) {
+	            utils.storeData( obj, node );
+	        });
+	
+	    // Storing data as a `key:value` pair
+	    } else if ( value ) {
+	        obj = {};
+	        obj[ key ] = value;
+	
+	        this.forEach(function ( node ) {
+	            utils.storeData( obj, node );
+	        });
+	
+	    // Accessing data by `key`
+	    } else if ( key ) {
+	        this.forEach(function ( node ) {
+	            if ( obj !== null ) {
+	                return;
+	            }
+	
+	            obj = utils.retrieveData( key, node );
+	
+	        });
+	
+	        ret = obj;
+	
+	    // Accessing all data
+	    // Merges all `unique` data for a Hobo set
+	    } else {
+	        obj = {};
+	
+	        // Object is mutated here by `mergeData`
+	        this.forEach(function ( node ) {
+	            utils.mergeData( obj, node );
+	        });
+	
+	        ret = obj;
+	    }
+	
+	    return ret;
+	};
+
+/***/ },
+/* 9 */
+/*!******************************************!*\
+  !*** ./~/properjs-hobo/lib/core/find.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var Hobo = __webpack_require__( /*! ../Hobo */ 3 ),
+	    utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method find
+	 * @description Query into a Hobo instance for new nodes.
+	 * @param {string} selector The selector to query for
+	 * @returns {Hobo}
+	 *
+	 */
+	module.exports = function ( selector ) {
+	    var ret = this;
+	
+	    // If we are `finding` within a multi-node collection...
+	    // Here its probably faster to grab the nodes within each Node
+	    // and then just let the context be the document for the new instance. 
+	    if ( this.length > 1 ) {
+	        ret = [];
+	
+	        this.forEach(function ( node ) {
+	            ret = ret.concat( utils.makeArray( node.querySelectorAll( selector ) ) );
+	        });
+	
+	        ret = new Hobo( ret, null );
+	
+	    // Single node collection
+	    // Empty node collection
+	    } else {
+	        ret = new Hobo( (this.length ? selector : []), (this.length ? this[ 0 ] : null) );
+	    }
+	
+	    return ret;
+	};
+
+/***/ },
+/* 10 */
+/*!**********************************************!*\
+  !*** ./~/properjs-hobo/lib/core/addClass.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method addClass
+	 * @description Add one or more classNames to the nodes.
+	 * @param {string} classes The space-separated classNames
+	 * @returns {Hobo}
+	 *
+	 */
+	module.exports = function ( classes ) {
+	    this.forEach(function ( element ) {
+	        var newClass = classes.split( " " ),
+	            elsClass = element.className.split( " " );
+	
+	        newClass.forEach(function ( klass ) {
+	            if ( elsClass.indexOf( klass ) === -1 ) {
+	                elsClass.push( klass );
+	            }
+	        });
+	
+	        element.className = utils.trimString( elsClass.join( " " ) );
+	    });
+	
+	    return this;
+	};
+
+/***/ },
+/* 11 */
+/*!*************************************************!*\
+  !*** ./~/properjs-hobo/lib/core/removeClass.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @instance
+	 * @memberof Hobo
+	 * @method removeClass
+	 * @description Remove one or more classNames from the nodes.
+	 * @param {string} classes The space-separated classNames
+	 * @returns {Hobo}
+	 *
+	 */
+	module.exports = function ( classes ) {
+	    this.forEach(function ( element ) {
+	        // Explicit check for `undefined`
+	        // Using `!classes` would be bad in this case
+	        // Calling `removeClass( "" )` should not wipe the entire className
+	        if ( classes === undefined ) {
+	            element.className = "";
+	
+	        } else {
+	            var oldClass = classes.split( " " ),
+	                elsClass = element.className.split( " " );
+	
+	            oldClass.forEach(function ( klass ) {
+	                if ( elsClass.indexOf( klass ) !== -1 ) {
+	                    elsClass.splice( elsClass.indexOf( klass ), 1 );
+	                }
+	            });
+	
+	            element.className = utils.trimString( elsClass.join( " " ) );
+	        }
+	    });
+	
+	    return this;
+	};
+
+/***/ },
+/* 12 */
+/*!******************************************!*\
+  !*** ./~/properjs-hobo/lib/core/ajax.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var utils = __webpack_require__( /*! ../utils */ 4 );
+	
+	
+	/**
+	 *
+	 * @static
+	 * @memberof Hobo
+	 * @method ajax
+	 * @description Perform standar XHR with a native Promise.
+	 *              dataType can be `html`, `json`, `jsonp`.
+	 * @param {object} config The ajax config object
+	 *                        url       => string, default: window.location.href
+	 *                        data      => object, default: null
+	 *                        dataType  => string, default: "html"
+	 *                        method    => string, default: "GET"
+	 *                        jsonp     => string, default: "callback"
+	 *                        headers   => object, default: null
+	 * @returns {Promise}
+	 *
+	 */
+	module.exports = function ( config ) {
+	    var params = (config.data || null),
+	        dataType = (config.dataType || "html"),
+	        method = (config.method || "GET").toUpperCase(),
+	        url = (config.url || window.location.href),
+	        headers = (config.headers || null);
+	
+	    // Handle params
+	    // Params will be one of the following:
+	    // Serialized querystring
+	    // Instanceof FormData
+	    // Null
+	    if ( params && !(FormData && params instanceof FormData) ) {
+	        params = utils.serializeData( config.data );
+	    }
+	
+	    // Handle params in GET URL
+	    if ( method === "GET" && params ) {
+	        url += ("?" + params);
+	    }
+	
+	    return new Promise(function ( resolve, reject ) {
+	        var handleResponse = function ( response ) {
+	            if ( dataType === "json" ) {
+	                try {
+	                    response = JSON.parse( response );
+	
+	                } catch ( error ) {
+	                    reject( ("Rejecting on JSON.parse error : " + error) );
+	                }
+	            }
+	
+	            resolve( response );
+	        };
+	
+	        // JSONP
+	        if ( dataType === "jsonp" ) {
+	            var jsonpCallbackValue = (utils.makeId() + "JSONP"),
+	                jsonpCallbackKey = (config.jsonp || "callback"),
+	                jsonpScript = document.createElement( "script" );
+	
+	            jsonpScript.src = (url + (/\?/.test( url ) ? "&" : "?") + jsonpCallbackKey + "=" + jsonpCallbackValue);
+	
+	            window[ jsonpCallbackValue ] = function ( response ) {
+	                document.getElementsByTagName( "head" )[ 0 ].removeChild( jsonpScript );
+	                jsonpScript = null;
+	                delete window[ jsonpCallbackValue ];
+	
+	                handleResponse( response );
+	            };
+	
+	            document.getElementsByTagName( "head" )[ 0 ].appendChild( jsonpScript );
+	
+	        // XHR
+	        } else {
+	            var xhr = new XMLHttpRequest();
+	
+	            xhr.open( method, url, true );
+	
+	            if ( headers ) {
+	                for ( var header in headers ) {
+	                    if ( headers.hasOwnProperty( header ) ) {
+	                        xhr.setRequestHeader( header, headers[ header ] );
+	                    }
+	                }
+	            }
+	
+	            xhr.onreadystatechange = function ( e ) {
+	                if ( this.readyState === 4 ) {
+	                    // Two-Hundo's are A-Okay with Hobo
+	                    if ( /^20/.test( this.status ) ) {
+	                        handleResponse( this.responseText );
+	
+	                    } else {
+	                        reject( ("Rejecting on server status code : " + this.status) );
+	                    }
+	                }
+	            };
+	
+	            xhr.send( params );
+	        }
+	    });
+	};
+
+/***/ },
+/* 13 */
+/*!********************!*\
+  !*** ./js/Menu.js ***!
+  \********************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _core = __webpack_require__(/*! ./core */ 14);
+	
+	var core = _interopRequireWildcard(_core);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var Menu = function () {
+	  function Menu($node) {
+	    _classCallCheck(this, Menu);
+	
+	    this.$node = $node;
+	    this.isOpen = false;
+	
+	    // this.$node.detach();
+	  }
+	
+	  _createClass(Menu, [{
+	    key: "open",
+	    value: function open() {
+	      this.isOpen = true;
+	
+	      core.dom.html.addClass("is-menu-open");
+	      // core.dom.body.append( $this.$node );
+	    }
+	  }, {
+	    key: "close",
+	    value: function close() {
+	      this.isOpen = false;
+	
+	      core.dom.html.removeClass("is-menu-open");
+	      // this.$node.detach();
+	    }
+	  }, {
+	    key: "toggle",
+	    value: function toggle() {
+	      if (this.isOpen) {
+	        this.close();
+	      } else {
+	        this.open();
+	      }
+	    }
+	  }]);
+	
+	  return Menu;
+	}();
+	
+	exports.default = Menu;
+
+/***/ },
+/* 14 */
+/*!**************************!*\
+  !*** ./js/core/index.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.util = exports.dom = undefined;
+	
+	var _dom = __webpack_require__(/*! ./dom */ 15);
+	
+	var _dom2 = _interopRequireDefault(_dom);
+	
+	var _util = __webpack_require__(/*! ./util */ 16);
+	
+	var util = _interopRequireWildcard(_util);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.dom = _dom2.default;
+	exports.util = util;
+
+/***/ },
+/* 15 */
+/*!************************!*\
+  !*** ./js/core/dom.js ***!
+  \************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _properjsHobo = __webpack_require__(/*! properjs-hobo */ 2);
+	
+	var _properjsHobo2 = _interopRequireDefault(_properjsHobo);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var dom = {
+	  doc: (0, _properjsHobo2.default)(document),
+	  html: (0, _properjsHobo2.default)(document.documentElement),
+	  body: (0, _properjsHobo2.default)(document.body),
+	  header: (0, _properjsHobo2.default)(".header"),
+	  nav: (0, _properjsHobo2.default)(".nav")
+	};
+	
+	exports.default = dom;
+
+/***/ },
+/* 16 */
+/*!*************************!*\
+  !*** ./js/core/util.js ***!
+  \*************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var isElementLoadable = function isElementLoadable(el) {
+	  if (el) {
+	    var bounds = el.getBoundingClientRect();
+	    return bounds.top < window.innerHeight * 2;
+	  }
+	};
+	
+	var isElementInViewport = function isElementInViewport(el) {
+	  if (el) {
+	    var bounds = el.getBoundingClientRect();
+	
+	    return bounds.top < window.innerHeight / 1.5 && bounds.bottom > 0;
+	  }
+	};
+	
+	var throttle = function throttle(func, wait, options) {
+	  var timeout, context, args, result;
+	  var previous = 0;
+	  var now = Date.now || function () {
+	    return new Date().getTime();
+	  };
+	  if (!options) options = {};
+	
+	  var later = function later() {
+	    previous = options.leading === false ? 0 : now();
+	    timeout = null;
+	    result = func.apply(context, args);
+	    if (!timeout) context = args = null;
+	  };
+	
+	  var throttled = function throttled() {
+	    var now = Date.now || function () {
+	      return new Date().getTime();
+	    };
+	    if (!previous && options.leading === false) previous = now;
+	    var remaining = wait - (now - previous);
+	    context = this;
+	    args = arguments;
+	    if (remaining <= 0 || remaining > wait) {
+	      if (timeout) {
+	        clearTimeout(timeout);
+	        timeout = null;
+	      }
+	      previous = now;
+	      result = func.apply(context, args);
+	      if (!timeout) context = args = null;
+	    } else if (!timeout && options.trailing !== false) {
+	      timeout = setTimeout(later, remaining);
+	    }
+	    return result;
+	  };
+	
+	  throttled.cancel = function () {
+	    clearTimeout(timeout);
+	    previous = 0;
+	    timeout = context = args = null;
+	  };
+	
+	  return throttled;
+	};
+	
+	exports.default = {
+	  isElementLoadable: isElementLoadable,
+	  isElementInViewport: isElementInViewport,
+	  throttle: throttle
+	};
+
+/***/ },
+/* 17 */
+/*!*****************************!*\
+  !*** ./js/gallery/index.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _core = __webpack_require__(/*! ../core */ 14);
+	
+	var core = _interopRequireWildcard(_core);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	var _core$util$default = core.util.default;
+	var isElementInViewport = _core$util$default.isElementInViewport;
+	var isElementLoadable = _core$util$default.isElementLoadable;
+	var throttle = _core$util$default.throttle;
+	
+	
+	!function () {
+	  var gallery = document.getElementById('gallery');
+	  if (gallery) {
+	    (function () {
+	
+	      var ImageLoader = __webpack_require__(/*! properjs-imageloader */ 18);
+	      var galleryItems = document.querySelectorAll(".gallery__item");
+	      var galleryItemsArray = [].concat(_toConsumableArray(galleryItems));
+	      var galleryImages = document.querySelectorAll(".gallery__image");
+	      var galleryImagesArray = [].concat(_toConsumableArray(galleryImages));
+	      var galleryVideo = document.querySelector(".gallery__video");
+	      var ticking = false;
+	      var i = void 0;
+	
+	      var imageOrientation = function imageOrientation(image) {
+	        if (image.clientWidth > image.clientHeight) {
+	          image.classList.add("gallery__item--landscape");
+	        } else {
+	          image.classList.add("gallery__item--portrait");
+	        }
+	      };
+	
+	      // for (var i = 0; i < galleryItemsArray.length; i++) {
+	      //   imageOrientation(galleryItemsArray[i]);
+	      // }
+	
+	      window.setTimeout(function () {
+	        if (galleryVideo) {
+	          galleryVideo.classList.add('is-active');
+	        }
+	        galleryItemsArray[0].classList.add('is-active');
+	        galleryItemsArray[1].classList.add('is-active');
+	      }, 500);
+	
+	      var imgLoader = new ImageLoader({
+	        elements: galleryImagesArray,
+	        property: "data-img-src",
+	        executor: isElementLoadable
+	      });
+	
+	      var update = function update() {
+	        ticking = false;
+	
+	        for (i = 0; i < galleryItemsArray.length; i++) {
+	          if (isElementInViewport(galleryItemsArray[i])) {
+	            galleryItemsArray[i].classList.add('is-active');
+	          }
+	        }
+	      };
+	
+	      var requestTick = function requestTick() {
+	        if (!ticking) {
+	          window.requestAnimationFrame(update);
+	        }
+	        ticking = true;
+	      };
+	
+	      var onScroll = function onScroll() {
+	        requestTick();
+	      };
+	
+	      window.addEventListener('scroll', throttle(onScroll, 100), false);
+	    })();
+	  }
+	}();
+
+/***/ },
+/* 18 */
+/*!***********************************************!*\
+  !*** ./~/properjs-imageloader/ImageLoader.js ***!
+  \***********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
 	 *
 	 * Handle lazy-loading images with contextual load conditions.
 	 *
@@ -52,12 +1439,1014 @@ var r=n(2),o=[],i=function(t,e){if(this._hobo=r.version,this._context=e&&e.nodeT
 	 *
 	 *
 	 */
-!function(e){t.exports=e()}(function(){var t=n(35),e=function(e){if(!e)throw new Error("ImageLoader Class requires options to be passed");return t.call(this),this._executor=e.executor||function(t){return t},this._elements=e.elements,this._property=e.property||"data-src",this._loadType=e.loadType||"async",this._numLoaded=0,this._num2Load=this._elements?this._elements.length:0,this._transitionDelay=e.transitionDelay||0,this._transitionDuration=e.transitionDuration||400,this._resolved=!1,this._elements.length?void("async"===this._loadType?this.initAsync():this.initSync()):this};return e.prototype=Object.create(t.prototype),e.prototype.initAsync=function(){var t=this;this.go(function(){t._resolved?t.stop():t.handle()})},e.prototype.initSync=function(){function t(){var n=e._elements[e._numLoaded];e._numLoaded++,e.load(n,function(n){n||e._resolved||t()})}var e=this;t()},e.prototype.load=function(t,e){var n=this,r=null,o=null,i="IMG"===t.nodeName,a=t.getAttribute(this._property);return t.setAttribute("data-imageloader",!0),r=i?t:new Image,o=setTimeout(function(){clearTimeout(o),r.onload=function(){n.fire("load",t),i||(t.style.backgroundImage="url("+a+")",r=null),o=setTimeout(function(){clearTimeout(o),n._numLoaded!==n._num2Load||n._resolved?"function"==typeof e&&e(!1):n._resolve(!0)},n._transitionDuration)},r.onerror=function(){n.fire("error",t),n._numLoaded!==n._num2Load||n._resolved?"function"==typeof e&&e(!0):n._resolve(!0)},r.src=a},this._transitionDelay),this},e.prototype.handle=function(){for(var t=this.getNotLoaded(),e=this,n=0,r=t.length;n<r;n++)e._executor(t[n])&&(e._numLoaded++,e.load(t[n]))},e.prototype.getNotLoaded=function(){for(var t=[],e=0,n=this._elements.length;e<n;e++)this._elements[e].getAttribute("data-imageloader")||t.push(this._elements[e]);return t},e.prototype._resolve=function(){this._resolved=!0,this.fire("done")},e})},function(t,e,n){/*!
+	(function ( factory ) {
+	
+	    if ( true ) {
+	        module.exports = factory();
+	
+	    } else if ( typeof window !== "undefined" ) {
+	        window.ImageLoader = factory();
+	    }
+	
+	})(function () {
+	
+	    var Controller = __webpack_require__( /*! properjs-controller */ 19 );
+	
+	
+	    /**
+	     *
+	     * Handle lazy-loading images with unique callback conditions
+	     * @memberof! <global>
+	     * @requires raf
+	     * @constructor ImageLoader
+	     * @param {object} options Controller settings
+	     * <ul>
+	     * <li>elements - The collection of elements to load against</li>
+	     * <li>property - The property to pull the image source from</li>
+	     * <li>transitionDelay - The timeout before transition starts</li>
+	     * <li>transitionDuration - The length of the animation</li>
+	     * </ul>
+	     *
+	     */
+	    var ImageLoader = function ( options ) {
+	        var self = this;
+	
+	        if ( !options ) {
+	            throw new Error( "ImageLoader Class requires options to be passed" );
+	        }
+	
+	        // Up, up and away...
+	        Controller.call( this );
+	
+	        /**
+	         *
+	         * The method to determine if an image should load itself
+	         * @memberof ImageLoader
+	         * @member _executor
+	         * @private
+	         *
+	         */
+	        this._executor = (options.executor || function ( elem ) {
+	            return elem;
+	        });
+	
+	        /**
+	         *
+	         * The Collection to load against
+	         * @memberof ImageLoader
+	         * @member _elements
+	         * @private
+	         *
+	         */
+	        this._elements = options.elements;
+	
+	        /**
+	         *
+	         * The property to get image source from
+	         * @memberof ImageLoader
+	         * @member _property
+	         * @private
+	         *
+	         */
+	        this._property = (options.property || "data-src");
+	
+	        /**
+	         *
+	         * The way to load, async or sync
+	         * Using "sync" loading requires calling .start() on the instance
+	         * and the "handle" event will not be utilized, rather each image
+	         * will be loaded in succession as the previous finishes loading
+	         * @memberof ImageLoader
+	         * @member _loadType
+	         * @private
+	         *
+	         */
+	        this._loadType = (options.loadType || "async");
+	
+	        /**
+	         *
+	         * The current amount of elements lazy loaded
+	         * @memberof ImageLoader
+	         * @member _numLoaded
+	         * @private
+	         *
+	         */
+	        this._numLoaded = 0;
+	
+	        /**
+	         *
+	         * The total amount of elements to lazy load
+	         * @memberof ImageLoader
+	         * @member _num2Load
+	         * @private
+	         *
+	         */
+	        this._num2Load = (this._elements ? this._elements.length : 0);
+	
+	        /**
+	         *
+	         * The delay to execute lazy loading on an element in ms
+	         * @memberof ImageLoader
+	         * @member _transitionDelay
+	         * @default 100
+	         * @private
+	         *
+	         */
+	        this._transitionDelay = (options.transitionDelay || 0);
+	
+	        /**
+	         *
+	         * The duration on a lazy loaded elements fade in in ms
+	         * @memberof ImageLoader
+	         * @member _transitionDuration
+	         * @default 600
+	         * @private
+	         *
+	         */
+	        this._transitionDuration = (options.transitionDuration || 400);
+	
+	        /**
+	         *
+	         * This flags that all elements have been loaded
+	         * @memberof ImageLoader
+	         * @member _resolved
+	         * @private
+	         *
+	         */
+	        this._resolved = false;
+	
+	        // Break out if no elements in collection
+	        if ( !this._elements.length ) {
+	            return this;
+	        }
+	
+	        // Only run animation frame for async loading
+	        if ( this._loadType === "async" ) {
+	            this.initAsync();
+	
+	        } else {
+	            this.initSync();
+	        }
+	    };
+	
+	
+	    /**
+	     *
+	     * @extends Controller
+	     *
+	     */
+	    ImageLoader.prototype = Object.create( Controller.prototype );
+	
+	
+	    /**
+	     *
+	     * Support asynchronous loading of a set of images
+	     * @memberof ImageLoader
+	     * @method initAsync
+	     *
+	     */
+	    ImageLoader.prototype.initAsync = function () {
+	        var self = this;
+	
+	        this.go(function () {
+	            if ( self._resolved ) {
+	                self.stop();
+	
+	            } else {
+	                self.handle();
+	            }
+	        });
+	    };
+	
+	    /**
+	     *
+	     * Support batch synchronous loading of a set of images
+	     * @memberof ImageLoader
+	     * @method initSync
+	     *
+	     */
+	    ImageLoader.prototype.initSync = function () {
+	        var self = this;
+	
+	        function syncLoad() {
+	            var elem = self._elements[ self._numLoaded ];
+	
+	            self._numLoaded++;
+	
+	            self.load( elem, function ( error ) {
+	                if ( !error && !self._resolved ) {
+	                    syncLoad();
+	                }
+	            });
+	        }
+	
+	        syncLoad();
+	    };
+	
+	    /**
+	     *
+	     * Perform the image loading and set correct values on element
+	     * @method load
+	     * @memberof ImageLoader
+	     * @param {object} $elem element object
+	     * @param {function} callback optional callback for each load
+	     * @fires done
+	     *
+	     */
+	    ImageLoader.prototype.load = function ( element, callback ) {
+	        var self = this,
+	            image = null,
+	            timeout = null,
+	            isImage = (element.nodeName === "IMG"),
+	            source = element.getAttribute( this._property );
+	
+	        element.setAttribute( "data-imageloader", true );
+	
+	        if ( isImage ) {
+	            image = element;
+	
+	        } else {
+	            image = new Image();
+	        }
+	
+	        timeout = setTimeout(function () {
+	            clearTimeout( timeout );
+	
+	            image.onload = function () {
+	                self.fire( "load", element );
+	
+	                if ( !isImage ) {
+	                    element.style.backgroundImage = ("url(" + source + ")");
+	
+	                    image = null;
+	                }
+	
+	                timeout = setTimeout(function () {
+	                    clearTimeout( timeout );
+	
+	                    if ( (self._numLoaded === self._num2Load) && !self._resolved ) {
+	                        self._resolve( true );
+	
+	                    } else if ( typeof callback === "function" ) {
+	                        // Errors first
+	                        callback( false );
+	                    }
+	
+	                }, self._transitionDuration );
+	            };
+	
+	            image.onerror = function () {
+	                self.fire( "error", element );
+	
+	                if ( (self._numLoaded === self._num2Load) && !self._resolved ) {
+	                    self._resolve( true );
+	
+	                } else if ( typeof callback === "function" ) {
+	                    // Errors first
+	                    callback( true );
+	                }
+	            };
+	
+	            image.src = source;
+	
+	        }, this._transitionDelay );
+	
+	        return this;
+	    };
+	
+	    /**
+	     *
+	     * Handles element iterations and loading based on callbacks
+	     * @memberof ImageLoader
+	     * @method handle
+	     *
+	     */
+	    ImageLoader.prototype.handle = function () {
+	        var elems = this.getNotLoaded(),
+	            self = this;
+	
+	        for ( var i = 0, len = elems.length; i < len; i++ ) {
+	            if ( self._executor( elems[ i ] ) ) {
+	                self._numLoaded++;
+	
+	                self.load( elems[ i ] );
+	            }
+	        }
+	    };
+	
+	    /**
+	     *
+	     * Get all images in the set that have yet to be loaded
+	     * @memberof ImageLoader
+	     * @method getNotLoaded
+	     *
+	     */
+	    ImageLoader.prototype.getNotLoaded = function () {
+	        var elems = [];
+	
+	        for ( var i = 0, len = this._elements.length; i < len; i++ ) {
+	            if ( !this._elements[ i ].getAttribute( "data-imageloader" ) ) {
+	                elems.push( this._elements[ i ] );
+	            }
+	        }
+	
+	        return elems;
+	    };
+	
+	    /**
+	     *
+	     * Resolve an instance and remove it from the stack
+	     * @memberof ImageLoader
+	     * @method _resolve
+	     *
+	     */
+	    ImageLoader.prototype._resolve = function () {
+	        // Resolved state
+	        this._resolved = true;
+	
+	        // Fires the predefined "done" event
+	        this.fire( "done" );
+	    };
+	
+	
+	    return ImageLoader;
+	
+	
+	});
+
+/***/ },
+/* 19 */
+/*!*********************************************!*\
+  !*** ./~/properjs-controller/Controller.js ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
 	 *
-	 * Use native element selector matching
+	 * Event / Animation cycle manager
 	 *
-	 * @matchElement
+	 * @Controller
 	 * @author: kitajchuk
 	 *
+	 *
 	 */
-!function(e){t.exports=e()}(function(){var t=function(e,n,r){var o=e.matches?"matches":e.webkitMatchesSelector?"webkitMatchesSelector":e.mozMatchesSelector?"mozMatchesSelector":e.msMatchesSelector?"msMatchesSelector":e.oMatchesSelector?"oMatchesSelector":null;return o&&e[o].call(e,n)?e:r&&e!==document.documentElement&&e.parentNode?t(e.parentNode,n,r):null};return t})},function(t,e,n){!function(e,n,r){"use strict";function o(){function t(t,e){this.scrollLeft=t,this.scrollTop=e}function o(t){return.5*(1-Math.cos(Math.PI*t))}function i(t){if("object"!=typeof t||null===t||t.behavior===r||"auto"===t.behavior||"instant"===t.behavior)return!0;if("object"==typeof t&&"smooth"===t.behavior)return!1;throw new TypeError("behavior not valid")}function a(t){var r,o,i;do t=t.parentNode,r=t===n.body,o=t.clientHeight<t.scrollHeight||t.clientWidth<t.scrollWidth,i="visible"===e.getComputedStyle(t,null).overflow;while(!r&&(!o||i));return r=o=i=null,t}function s(t){t.frame=e.requestAnimationFrame(s.bind(e,t));var n,r,i,a=d(),u=(a-t.startTime)/l;if(u=u>1?1:u,n=o(u),r=t.startX+(t.x-t.startX)*n,i=t.startY+(t.y-t.startY)*n,t.method.call(t.scrollable,r,i),r===t.x&&i===t.y)return void e.cancelAnimationFrame(t.frame)}function u(r,o,i){var a,u,c,l,h,p=d();r===n.body?(a=e,u=e.scrollX||e.pageXOffset,c=e.scrollY||e.pageYOffset,l=f.scroll):(a=r,u=r.scrollLeft,c=r.scrollTop,l=t),h&&e.cancelAnimationFrame(h),s({scrollable:a,method:l,startTime:p,startX:u,startY:c,x:o,y:i,frame:h})}if(!("scrollBehavior"in n.documentElement.style)){var c=e.HTMLElement||e.Element,l=468,f={scroll:e.scroll||e.scrollTo,scrollBy:e.scrollBy,scrollIntoView:c.prototype.scrollIntoView},d=e.performance&&e.performance.now?e.performance.now.bind(e.performance):Date.now;e.scroll=e.scrollTo=function(){return i(arguments[0])?void f.scroll.call(e,arguments[0].left||arguments[0],arguments[0].top||arguments[1]):void u.call(e,n.body,~~arguments[0].left,~~arguments[0].top)},e.scrollBy=function(){return i(arguments[0])?void f.scrollBy.call(e,arguments[0].left||arguments[0],arguments[0].top||arguments[1]):void u.call(e,n.body,~~arguments[0].left+(e.scrollX||e.pageXOffset),~~arguments[0].top+(e.scrollY||e.pageYOffset))},c.prototype.scrollIntoView=function(){if(i(arguments[0]))return void f.scrollIntoView.call(this,arguments[0]||!0);var t=a(this),r=t.getBoundingClientRect(),o=this.getBoundingClientRect();t!==n.body?(u.call(this,t,t.scrollLeft+o.left-r.left,t.scrollTop+o.top-r.top),e.scrollBy({left:r.left,top:r.top,behavior:"smooth"})):e.scrollBy({left:o.left,top:o.top,behavior:"smooth"})}}}t.exports={polyfill:o}}(window,document)}]);
+	(function ( factory ) {
+	    
+	    if ( true ) {
+	        module.exports = factory();
+	
+	    } else if ( typeof window !== "undefined" ) {
+	        window.Controller = factory();
+	    }
+	    
+	})(function () {
+	    // Private animation functions
+	    var raf = window.requestAnimationFrame,
+	        caf = window.cancelAnimationFrame,
+	    
+	    
+	    /**
+	     *
+	     * Event / Animation cycle manager
+	     * @constructor Controller
+	     * @requires raf
+	     * @memberof! <global>
+	     *
+	     */
+	    Controller = function () {
+	        return this.init.apply( this, arguments );
+	    };
+	    
+	    Controller.prototype = {
+	        constructor: Controller,
+	    
+	        /**
+	         *
+	         * Controller constructor method
+	         * @memberof Controller
+	         * @method Controller.init
+	         *
+	         */
+	        init: function () {
+	            /**
+	             *
+	             * Controller event handlers object
+	             * @memberof Controller
+	             * @member _handlers
+	             * @private
+	             *
+	             */
+	            this._handlers = {};
+	    
+	            /**
+	             *
+	             * Controller unique ID
+	             * @memberof Controller
+	             * @member _uid
+	             * @private
+	             *
+	             */
+	            this._uid = 0;
+	    
+	            /**
+	             *
+	             * Started iteration flag
+	             * @memberof Controller
+	             * @member _started
+	             * @private
+	             *
+	             */
+	            this._started = false;
+	    
+	            /**
+	             *
+	             * Paused flag
+	             * @memberof Controller
+	             * @member _paused
+	             * @private
+	             *
+	             */
+	            this._paused = false;
+	    
+	            /**
+	             *
+	             * Timeout reference
+	             * @memberof Controller
+	             * @member _cycle
+	             * @private
+	             *
+	             */
+	            this._cycle = null;
+	        },
+	    
+	        /**
+	         *
+	         * Controller go method to start frames
+	         * @memberof Controller
+	         * @method go
+	         *
+	         */
+	        go: function ( fn ) {
+	            if ( this._started && this._cycle ) {
+	                return this;
+	            }
+	    
+	            this._started = true;
+	    
+	            var self = this,
+	                anim = function () {
+	                    self._cycle = raf( anim );
+	    
+	                    if ( self._started ) {
+	                        if ( typeof fn === "function" ) {
+	                            fn();
+	                        }
+	                    }
+	                };
+	    
+	            anim();
+	        },
+	    
+	        /**
+	         *
+	         * Pause the cycle
+	         * @memberof Controller
+	         * @method pause
+	         *
+	         */
+	        pause: function () {
+	            this._paused = true;
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Play the cycle
+	         * @memberof Controller
+	         * @method play
+	         *
+	         */
+	        play: function () {
+	            this._paused = false;
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Stop the cycle
+	         * @memberof Controller
+	         * @method stop
+	         *
+	         */
+	        stop: function () {
+	            caf( this._cycle );
+	    
+	            this._paused = false;
+	            this._started = false;
+	            this._cycle = null;
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Controller add event handler
+	         * @memberof Controller
+	         * @method on
+	         * @param {string} event the event to listen for
+	         * @param {function} handler the handler to call
+	         *
+	         */
+	        on: function ( event, handler ) {
+	            var events = event.split( " " );
+	    
+	            // One unique ID per handler
+	            handler._jsControllerID = this.getUID();
+	    
+	            for ( var i = events.length; i--; ) {
+	                if ( typeof handler === "function" ) {
+	                    if ( !this._handlers[ events[ i ] ] ) {
+	                        this._handlers[ events[ i ] ] = [];
+	                    }
+	    
+	                    // Handler can be stored with multiple events
+	                    this._handlers[ events[ i ] ].push( handler );
+	                }
+	            }
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Controller remove event handler
+	         * @memberof Controller
+	         * @method off
+	         * @param {string} event the event to remove handler for
+	         * @param {function} handler the handler to remove
+	         *
+	         */
+	        off: function ( event, handler ) {
+	            if ( !this._handlers[ event ] ) {
+	                return this;
+	            }
+	    
+	            // Remove a single handler
+	            if ( handler ) {
+	                this._off( event, handler );
+	    
+	            // Remove all handlers for event
+	            } else {
+	                this._offed( event );
+	            }
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Controller fire an event
+	         * @memberof Controller
+	         * @method fire
+	         * @param {string} event the event to fire
+	         *
+	         */
+	        fire: function ( event ) {
+	            if ( !this._handlers[ event ] ) {
+	                return this;
+	            }
+	    
+	            var args = [].slice.call( arguments, 1 );
+	    
+	            for ( var i = this._handlers[ event ].length; i--; ) {
+	                this._handlers[ event ][ i ].apply( this, args );
+	            }
+	    
+	            return this;
+	        },
+	    
+	        /**
+	         *
+	         * Get a unique ID
+	         * @memberof Controller
+	         * @method getUID
+	         * @returns number
+	         *
+	         */
+	        getUID: function () {
+	            this._uid = (this._uid + 1);
+	    
+	            return this._uid;
+	        },
+	    
+	        /**
+	         *
+	         * Controller internal off method assumes event AND handler are good
+	         * @memberof Controller
+	         * @method _off
+	         * @param {string} event the event to remove handler for
+	         * @param {function} handler the handler to remove
+	         * @private
+	         *
+	         */
+	        _off: function ( event, handler ) {
+	            for ( var i = 0, len = this._handlers[ event ].length; i < len; i++ ) {
+	                if ( handler._jsControllerID === this._handlers[ event ][ i ]._jsControllerID ) {
+	                    this._handlers[ event ].splice( i, 1 );
+	    
+	                    break;
+	                }
+	            }
+	        },
+	    
+	        /**
+	         *
+	         * Controller completely remove all handlers and an event type
+	         * @memberof Controller
+	         * @method _offed
+	         * @param {string} event the event to remove handler for
+	         * @private
+	         *
+	         */
+	        _offed: function ( event ) {
+	            for ( var i = this._handlers[ event ].length; i--; ) {
+	                this._handlers[ event ][ i ] = null;
+	            }
+	    
+	            delete this._handlers[ event ];
+	        }
+	    };
+	
+	    return Controller;
+	});
+
+/***/ },
+/* 20 */
+/*!**************************!*\
+  !*** ./js/home/index.js ***!
+  \**************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _properjsHobo = __webpack_require__(/*! properjs-hobo */ 2);
+	
+	var _properjsHobo2 = _interopRequireDefault(_properjsHobo);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	!function () {
+	  var home = document.getElementById('home');
+	
+	  if (home) {
+	    (function () {
+	      var onScroll = function onScroll() {
+	        latestKnownScroll = window.scrollY;
+	        requestTick();
+	      };
+	
+	      var requestTick = function requestTick() {
+	        if (!ticking) {
+	          window.requestAnimationFrame(update);
+	        }
+	        ticking = true;
+	      };
+	
+	      var update = function update() {
+	        ticking = false;
+	
+	        if (latestKnownScroll >= splashHeight - 100) {
+	          html.classList.remove('nav-is-white');
+	        } else {
+	          html.classList.add('nav-is-white');
+	        }
+	      };
+	
+	      var home = (0, _properjsHobo2.default)('#home');
+	      var html = document.documentElement;
+	      var splash = (0, _properjsHobo2.default)('.splash');
+	      var splashHeight = splash[0].clientHeight;
+	      var link = (0, _properjsHobo2.default)('.splash__caret');
+	      var latestKnownScroll = 0;
+	      var ticking = false;
+	      var storyLink = (0, _properjsHobo2.default)('.nav__item--stories');
+	
+	      html.classList.add('nav-is-white');
+	
+	      var onClick = function onClick(e) {
+	        e.preventDefault();
+	        home[0].scrollIntoView({ behavior: 'smooth' });
+	      };
+	
+	      link[0].addEventListener("click", onClick, false);
+	      storyLink[0].addEventListener("click", onClick, false);
+	      window.addEventListener('scroll', onScroll, false);
+	    })();
+	  }
+	}();
+
+/***/ },
+/* 21 */
+/*!******************************************************!*\
+  !*** ./~/smoothscroll-polyfill/dist/smoothscroll.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+	 * smoothscroll polyfill - v0.3.4
+	 * https://iamdustan.github.io/smoothscroll
+	 * 2016 (c) Dustan Kasten, Jeremias Menichelli - MIT License
+	 */
+	
+	(function(w, d, undefined) {
+	  'use strict';
+	
+	  /*
+	   * aliases
+	   * w: window global object
+	   * d: document
+	   * undefined: undefined
+	   */
+	
+	  // polyfill
+	  function polyfill() {
+	    // return when scrollBehavior interface is supported
+	    if ('scrollBehavior' in d.documentElement.style) {
+	      return;
+	    }
+	
+	    /*
+	     * globals
+	     */
+	    var Element = w.HTMLElement || w.Element;
+	    var SCROLL_TIME = 468;
+	
+	    /*
+	     * object gathering original scroll methods
+	     */
+	    var original = {
+	      scroll: w.scroll || w.scrollTo,
+	      scrollBy: w.scrollBy,
+	      scrollIntoView: Element.prototype.scrollIntoView
+	    };
+	
+	    /*
+	     * define timing method
+	     */
+	    var now = w.performance && w.performance.now
+	      ? w.performance.now.bind(w.performance) : Date.now;
+	
+	    /**
+	     * changes scroll position inside an element
+	     * @method scrollElement
+	     * @param {Number} x
+	     * @param {Number} y
+	     */
+	    function scrollElement(x, y) {
+	      this.scrollLeft = x;
+	      this.scrollTop = y;
+	    }
+	
+	    /**
+	     * returns result of applying ease math function to a number
+	     * @method ease
+	     * @param {Number} k
+	     * @returns {Number}
+	     */
+	    function ease(k) {
+	      return 0.5 * (1 - Math.cos(Math.PI * k));
+	    }
+	
+	    /**
+	     * indicates if a smooth behavior should be applied
+	     * @method shouldBailOut
+	     * @param {Number|Object} x
+	     * @returns {Boolean}
+	     */
+	    function shouldBailOut(x) {
+	      if (typeof x !== 'object'
+	            || x === null
+	            || x.behavior === undefined
+	            || x.behavior === 'auto'
+	            || x.behavior === 'instant') {
+	        // first arg not an object/null
+	        // or behavior is auto, instant or undefined
+	        return true;
+	      }
+	
+	      if (typeof x === 'object'
+	            && x.behavior === 'smooth') {
+	        // first argument is an object and behavior is smooth
+	        return false;
+	      }
+	
+	      // throw error when behavior is not supported
+	      throw new TypeError('behavior not valid');
+	    }
+	
+	    /**
+	     * finds scrollable parent of an element
+	     * @method findScrollableParent
+	     * @param {Node} el
+	     * @returns {Node} el
+	     */
+	    function findScrollableParent(el) {
+	      var isBody;
+	      var hasScrollableSpace;
+	      var hasVisibleOverflow;
+	
+	      do {
+	        el = el.parentNode;
+	
+	        // set condition variables
+	        isBody = el === d.body;
+	        hasScrollableSpace =
+	          el.clientHeight < el.scrollHeight ||
+	          el.clientWidth < el.scrollWidth;
+	        hasVisibleOverflow =
+	          w.getComputedStyle(el, null).overflow === 'visible';
+	      } while (!isBody && !(hasScrollableSpace && !hasVisibleOverflow));
+	
+	      isBody = hasScrollableSpace = hasVisibleOverflow = null;
+	
+	      return el;
+	    }
+	
+	    /**
+	     * self invoked function that, given a context, steps through scrolling
+	     * @method step
+	     * @param {Object} context
+	     */
+	    function step(context) {
+	      // call method again on next available frame
+	      context.frame = w.requestAnimationFrame(step.bind(w, context));
+	
+	      var time = now();
+	      var value;
+	      var currentX;
+	      var currentY;
+	      var elapsed = (time - context.startTime) / SCROLL_TIME;
+	
+	      // avoid elapsed times higher than one
+	      elapsed = elapsed > 1 ? 1 : elapsed;
+	
+	      // apply easing to elapsed time
+	      value = ease(elapsed);
+	
+	      currentX = context.startX + (context.x - context.startX) * value;
+	      currentY = context.startY + (context.y - context.startY) * value;
+	
+	      context.method.call(context.scrollable, currentX, currentY);
+	
+	      // return when end points have been reached
+	      if (currentX === context.x && currentY === context.y) {
+	        w.cancelAnimationFrame(context.frame);
+	        return;
+	      }
+	    }
+	
+	    /**
+	     * scrolls window with a smooth behavior
+	     * @method smoothScroll
+	     * @param {Object|Node} el
+	     * @param {Number} x
+	     * @param {Number} y
+	     */
+	    function smoothScroll(el, x, y) {
+	      var scrollable;
+	      var startX;
+	      var startY;
+	      var method;
+	      var startTime = now();
+	      var frame;
+	
+	      // define scroll context
+	      if (el === d.body) {
+	        scrollable = w;
+	        startX = w.scrollX || w.pageXOffset;
+	        startY = w.scrollY || w.pageYOffset;
+	        method = original.scroll;
+	      } else {
+	        scrollable = el;
+	        startX = el.scrollLeft;
+	        startY = el.scrollTop;
+	        method = scrollElement;
+	      }
+	
+	      // cancel frame when a scroll event's happening
+	      if (frame) {
+	        w.cancelAnimationFrame(frame);
+	      }
+	
+	      // scroll looping over a frame
+	      step({
+	        scrollable: scrollable,
+	        method: method,
+	        startTime: startTime,
+	        startX: startX,
+	        startY: startY,
+	        x: x,
+	        y: y,
+	        frame: frame
+	      });
+	    }
+	
+	    /*
+	     * ORIGINAL METHODS OVERRIDES
+	     */
+	
+	    // w.scroll and w.scrollTo
+	    w.scroll = w.scrollTo = function() {
+	      // avoid smooth behavior if not required
+	      if (shouldBailOut(arguments[0])) {
+	        original.scroll.call(
+	          w,
+	          arguments[0].left || arguments[0],
+	          arguments[0].top || arguments[1]
+	        );
+	        return;
+	      }
+	
+	      // LET THE SMOOTHNESS BEGIN!
+	      smoothScroll.call(
+	        w,
+	        d.body,
+	        ~~arguments[0].left,
+	        ~~arguments[0].top
+	      );
+	    };
+	
+	    // w.scrollBy
+	    w.scrollBy = function() {
+	      // avoid smooth behavior if not required
+	      if (shouldBailOut(arguments[0])) {
+	        original.scrollBy.call(
+	          w,
+	          arguments[0].left || arguments[0],
+	          arguments[0].top || arguments[1]
+	        );
+	        return;
+	      }
+	
+	      // LET THE SMOOTHNESS BEGIN!
+	      smoothScroll.call(
+	        w,
+	        d.body,
+	        ~~arguments[0].left + (w.scrollX || w.pageXOffset),
+	        ~~arguments[0].top + (w.scrollY || w.pageYOffset)
+	      );
+	    };
+	
+	    // Element.prototype.scrollIntoView
+	    Element.prototype.scrollIntoView = function() {
+	      // avoid smooth behavior if not required
+	      if (shouldBailOut(arguments[0])) {
+	        original.scrollIntoView.call(this, arguments[0] || true);
+	        return;
+	      }
+	
+	      // LET THE SMOOTHNESS BEGIN!
+	      var scrollableParent = findScrollableParent(this);
+	      var parentRects = scrollableParent.getBoundingClientRect();
+	      var clientRects = this.getBoundingClientRect();
+	
+	      if (scrollableParent !== d.body) {
+	        // reveal element inside parent
+	        smoothScroll.call(
+	          this,
+	          scrollableParent,
+	          scrollableParent.scrollLeft + clientRects.left - parentRects.left,
+	          scrollableParent.scrollTop + clientRects.top - parentRects.top
+	        );
+	        // reveal parent in viewport
+	        w.scrollBy({
+	          left: parentRects.left,
+	          top: parentRects.top,
+	          behavior: 'smooth'
+	        });
+	      } else {
+	        // reveal element in viewport
+	        w.scrollBy({
+	          left: clientRects.left,
+	          top: clientRects.top,
+	          behavior: 'smooth'
+	        });
+	      }
+	    };
+	  }
+	
+	  if (true) {
+	    // commonjs
+	    module.exports = { polyfill: polyfill };
+	  } else {
+	    // global
+	    polyfill();
+	  }
+	})(window, document);
+
+
+/***/ }
+/******/ ]);
+//# sourceMappingURL=app.js.map

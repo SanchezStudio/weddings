@@ -1,9 +1,13 @@
 import axios from 'axios';
 
 !(function() {
+
   const contact = document.getElementById('contact');
 
   if (contact) {
+    document.addEventListener("DOMContentLoaded", function(event) {
+      iFrameResize({checkOrigin: false});
+    });
 
     let form = document.getElementById('contact-form');
     let formContainer = document.getElementById('form-container')

@@ -11,9 +11,9 @@ var galleriesList = Object.keys(galleries).map(function(value) {
                       return galleries[value]});
 
 // Mailgun
-var Mailgun = require('mailgun-js');
 var api_key = process.env.MAILGUN;
 var domain = 'mg.sanchezstudio.co';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 app.use(compression());
 app.use('/assets', express.static(__dirname + '/public'));
@@ -54,7 +54,6 @@ app.get('/contact', function(req, res){
 // Send a message to the specified email address when you navigate to /submit/someaddr@email.com
 // The index redirects here
 app.post('/submit', function(req,res) {
-  let mailgun = new Mailgun({apiKey: api_key, domain: domain});
   let model = req.body;
   //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
   // var mailgun = new Mailgun({apiKey: api_key, domain: domain});

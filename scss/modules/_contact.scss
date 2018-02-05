@@ -36,7 +36,7 @@
   z-index: 2;
   opacity: 1;
   transition: 600ms ease opacity;
-  .success & {
+  .success &, .error & {
     opacity: 0;
   }
 }

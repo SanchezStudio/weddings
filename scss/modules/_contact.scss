@@ -34,28 +34,4 @@
 .form {
   position: relative;
   z-index: 2;
-  opacity: 1;
-  transition: 600ms ease opacity;
-  .success &, .error & {
-    opacity: 0;
-  }
-}
-.form-success, .form-error {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  opacity: 0;
-  transition: 600ms ease opacity;
-}
-.form-error {
-  h1 { color: darken(red, 10%); }
-}
-.success .form-success {
-  opacity: 1;
-}
-.error .form-error {
-  opacity: 1;
 }

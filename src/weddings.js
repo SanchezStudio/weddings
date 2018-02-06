@@ -5,7 +5,6 @@
 var compression = require('compression');
 var express = require('express');
 var bodyParser = require('body-parser');
-var reload = require('reload');
 var app = express();
 var galleries = require('./data/gallery.json');
 var galleriesList = Object.keys(galleries).map(function(value) {
@@ -86,8 +85,6 @@ app.get('/contact', function(req, res){
 //   });
 
 // });
-
-reload(app);
 
 app.listen(3000, function() {
   console.log("The frontend server is running on port 3000!");

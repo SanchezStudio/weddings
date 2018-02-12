@@ -1,5 +1,18 @@
 .investments {
-  max-width: 768px;
+  max-width: 850px;
+  h1, p {
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+  }
   &:before {
     content: '';
     display: block;
@@ -18,18 +31,14 @@
   text-align: left;
   margin-bottom: $margin-lg;
   h1 { margin-bottom: $margin-md; }
-  @media screen and (min-width: 640px) {
-    text-align: center;
-  }
+}
+.price {
+  font-size: 20px;
 }
 .investment, .addons {
   @media screen and (min-width: 640px) {
     display: inline-block;
-    width: 50%;
-    font-size: 0;
-    vertical-align: top;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 100%;
     margin-bottom: 75px;
   }
 }

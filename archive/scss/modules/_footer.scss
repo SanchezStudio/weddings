@@ -1,0 +1,40 @@
+/* ================================== */
+/* FOOTER */
+/* ================================== */
+footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: $padding-xl $padding-md;
+  text-align: center;
+  z-index: 2;
+}
+footer p {
+  font-size: 12px;
+}
+.social {
+  display: block;
+  width: 100%;
+  margin: 0 0 $margin-md;
+  padding: 0;
+  &__items {
+    display: inline-block;
+    padding: 10px;
+  }
+  &__link {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 0.075rem;
+    text-transform: lowercase;
+    color: $grey;
+    text-decoration: none;
+    transition: 400ms ease;
+    &:visited,
+    &:active,
+    &:focus {
+      color: $grey;
+    }
+    &:hover { color: lighten($grey, 25%); }
+  }
+}

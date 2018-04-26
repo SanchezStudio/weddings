@@ -1,0 +1,29 @@
+extends ./layout.jade
+
+block content
+  section.header
+    h1 #{gallery.title}
+    p #{gallery.description}
+  section#gallery.gallery
+    if gallery.has_video
+      div.gallery__video.animate
+        div.gallery__video-inner
+          <iframe src="https://player.vimeo.com/video/#{gallery.video_url}?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    if gallery.has_gallery
+      for item in gallery.images
+        if item.orientation === "portrait"
+          .gallery__item.gallery__item--portrait.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+        else if item.orientation === "portrait-full"
+          .gallery__item.gallery__item--portrait-full.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+        else if item.orientation === "landscape-half"
+          .gallery__item.gallery__item--landscape-half.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+        else
+          .gallery__item.gallery__item--landscape.animate
+            .gallery__inner
+              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")

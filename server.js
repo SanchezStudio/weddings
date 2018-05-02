@@ -71,6 +71,12 @@ module.exports = require("react");
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-dom");
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80,19 +86,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Home = __webpack_require__(8);
+var _Home = __webpack_require__(9);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _About = __webpack_require__(9);
+var _About = __webpack_require__(11);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Gallery = __webpack_require__(10);
+var _Gallery = __webpack_require__(12);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
-var _api = __webpack_require__(11);
+var _Investment = __webpack_require__(16);
+
+var _Investment2 = _interopRequireDefault(_Investment);
+
+var _api = __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -105,6 +115,10 @@ var routes = [{
   exact: true,
   component: _About2.default
 }, {
+  path: '/investment',
+  exact: true,
+  component: _Investment2.default
+}, {
   path: '/gallery/:id',
   component: _Gallery2.default,
   fetchInitialData: function fetchInitialData() {
@@ -114,12 +128,6 @@ var routes = [{
 }];
 
 exports.default = routes;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-router-dom");
 
 /***/ }),
 /* 3 */
@@ -136,23 +144,23 @@ var _cors = __webpack_require__(5);
 
 var _cors2 = _interopRequireDefault(_cors);
 
-var _server = __webpack_require__(6);
-
-var _App = __webpack_require__(7);
-
-var _App2 = _interopRequireDefault(_App);
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _serializeJavascript = __webpack_require__(14);
+var _server = __webpack_require__(6);
+
+var _reactRouterDom = __webpack_require__(1);
+
+var _serializeJavascript = __webpack_require__(7);
 
 var _serializeJavascript2 = _interopRequireDefault(_serializeJavascript);
 
-var _reactRouterDom = __webpack_require__(2);
+var _App = __webpack_require__(8);
 
-var _routes = __webpack_require__(1);
+var _App2 = _interopRequireDefault(_App);
+
+var _routes = __webpack_require__(2);
 
 var _routes2 = _interopRequireDefault(_routes);
 
@@ -161,10 +169,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express2.default)();
 
 app.use((0, _cors2.default)());
+app.use(_express2.default.static("public"));
 
-app.use(_express2.default.static('public'));
-
-app.get('*', function (req, res, next) {
+app.get("*", function (req, res, next) {
   var activeRoute = _routes2.default.find(function (route) {
     return (0, _reactRouterDom.matchPath)(req.url, route);
   }) || {};
@@ -173,18 +180,19 @@ app.get('*', function (req, res, next) {
 
   promise.then(function (data) {
     var context = { data: data };
+
     var markup = (0, _server.renderToString)(_react2.default.createElement(
       _reactRouterDom.StaticRouter,
       { location: req.url, context: context },
       _react2.default.createElement(_App2.default, null)
     ));
 
-    res.send('\n        <!DOCTYPE html>\n          <head>\n            <title>SSR with RR</title>\n            <script src=\'/bundle.js\' defer></script>\n            <script>window.__INITIAL_DATA__ = ' + (0, _serializeJavascript2.default)(data) + '</script>\n          </head>\n\n          <body>\n            <div id=\'app\'>' + markup + '</div>\n          </body>\n        </html>\n      ');
-  });
+    res.send("\n      <!DOCTYPE html>\n      <html>\n        <head>\n          <title>SSR with RR</title>\n          <script src=\"/bundle.js\" defer></script>\n          <script>window.__INITIAL_DATA__ = " + (0, _serializeJavascript2.default)(data) + "</script>\n        </head>\n\n        <body>\n          <div id=\"app\">" + markup + "</div>\n        </body>\n      </html>\n    ");
+  }).catch(next);
 });
 
 app.listen(3000, function () {
-  console.log('Server is listening on port 3000');
+  console.log("Server is listening on port: 3000");
 });
 
 /***/ }),
@@ -207,6 +215,12 @@ module.exports = require("react-dom/server");
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("serialize-javascript");
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -224,13 +238,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _routes = __webpack_require__(1);
+var _routes = __webpack_require__(2);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(1);
 
-var _NoMatch = __webpack_require__(13);
+var _Nav = __webpack_require__(19);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+var _NoMatch = __webpack_require__(20);
 
 var _NoMatch2 = _interopRequireDefault(_NoMatch);
 
@@ -259,23 +277,19 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
+        _react2.default.createElement(_Nav2.default, null),
         _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
           _routes2.default.map(function (_ref) {
             var path = _ref.path,
                 exact = _ref.exact,
-                C = _ref.component,
+                Component = _ref.component,
                 rest = _objectWithoutProperties(_ref, ['path', 'exact', 'component']);
 
-            return _react2.default.createElement(_reactRouterDom.Route, {
-              key: path,
-              path: path,
-              exact: exact,
-              render: function render(props) {
-                return _react2.default.createElement(C, _extends({}, props, rest));
-              }
-            });
+            return _react2.default.createElement(_reactRouterDom.Route, { key: path, path: path, exact: exact, render: function render(props) {
+                return _react2.default.createElement(Component, _extends({}, props, rest));
+              } });
           }),
           _react2.default.createElement(_reactRouterDom.Route, { render: function render(props) {
               return _react2.default.createElement(_NoMatch2.default, props);
@@ -291,7 +305,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -307,6 +321,12 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(1);
+
+var _couples = __webpack_require__(10);
+
+var _couples2 = _interopRequireDefault(_couples);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -314,13 +334,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var galleries = [{
-  name: 'Kya & Mike',
-  slug: 'kya-and-mike',
-  categories: ['all', 'engagement', 'photo', 'video'],
-  thumbnail: '/'
-}];
 
 var Home = function (_Component) {
   _inherits(Home, _Component);
@@ -334,6 +347,8 @@ var Home = function (_Component) {
   _createClass(Home, [{
     key: 'render',
     value: function render() {
+      var couples = _couples2.default.couples;
+
       return _react2.default.createElement(
         'div',
         null,
@@ -345,6 +360,22 @@ var Home = function (_Component) {
             null,
             'Stories'
           )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'home' },
+          couples.map(function (couple, index) {
+            return _react2.default.createElement(
+              _reactRouterDom.NavLink,
+              { key: couple.slug + '-' + index, className: 'home__item', to: '/gallery/' + couple.slug },
+              _react2.default.createElement('div', { className: 'home__img', style: { "backgroundImage": 'url(https://weddings.nyc3.digitaloceanspaces.com/data/galleries/' + couple.slug + '/images/thumbnail.jpg)' } }),
+              _react2.default.createElement(
+                'h4',
+                { className: 'home__title' },
+                couple.title
+              )
+            );
+          })
         )
       );
     }
@@ -356,7 +387,13 @@ var Home = function (_Component) {
 exports.default = Home;
 
 /***/ }),
-/* 9 */
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = {"couples":[{"slug":"kya-and-mike","title":"Kya & Mike","categories":["all","photography","video"]},{"slug":"keren-and-matt","title":"Keren & Matt","categories":["all","video"]},{"slug":"meredith-and-dale","title":"Meredith & Dale","categories":["all","video"]},{"slug":"michelle-and-steve","title":"Michelle & Steve","categories":["all","photography"]},{"slug":"jessie-and-josh","title":"Jessie & Josh","categories":["all","photography"]},{"slug":"michelle-and-mark","title":"Michelle & Mark","categories":["all","photography","video"]},{"slug":"anna-and-derek","title":"Anna & Derek","categories":["all","photography"]},{"slug":"ali-and-eddy","title":"Ali & Eddy","categories":["all","photography"]},{"slug":"jen-and-zach","title":"Jen & Zach","categories":["all","photography"]},{"slug":"brittany-and-dez","title":"Brittany & Dez","categories":["all","photography"]},{"slug":"tiffany-and-john","title":"Tiffany & John","categories":["all","photography","video"]},{"slug":"lacy-and-corwin","title":"Lacy & Corwin","categories":["all","photography","video"]},{"slug":"kendall-and-caleb","title":"Kendall & Caleb","categories":["all","video"]},{"slug":"malisa-and-taylor","title":"Malisa & Taylor","categories":["all","photography"]},{"slug":"andy-and-hillary","title":"Andy & Hillary","categories":["all","photography"]},{"slug":"kelsey-and-luke","title":"Kelsey & Luke","categories":["all","photography"]},{"slug":"kelbe-and-kyle","title":"Kelbe & Kyle","categories":["all","photography"]},{"slug":"morgan-and-steve","title":"Morgan & Steve","categories":["all","photography"]},{"slug":"amy-and-nick","title":"Amy & Nick","categories":["all","video"]},{"slug":"miriam-and-brittan","title":"Miriam & Brittan","categories":["all","video"]}]}
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -453,7 +490,207 @@ var About = function (_Component) {
 exports.default = About;
 
 /***/ }),
-/* 10 */
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Video = __webpack_require__(13);
+
+var _Video2 = _interopRequireDefault(_Video);
+
+var _Images = __webpack_require__(14);
+
+var _Images2 = _interopRequireDefault(_Images);
+
+var _Category = __webpack_require__(15);
+
+var _Category2 = _interopRequireDefault(_Category);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = function (_Component) {
+  _inherits(Gallery, _Component);
+
+  function Gallery(props) {
+    _classCallCheck(this, Gallery);
+
+    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+
+    console.log('props', _this.props);
+    var gallery = void 0;
+    if (false) {
+      console.log("data", window.__INITIAL_DATA__);
+      gallery = window.__INITIAL_DATA__;
+      delete window.__INITIAL_DATA__;
+    } else {
+      gallery = props.staticContext.data;
+    }
+
+    _this.state = {
+      gallery: gallery,
+      activeCategoryIndex: 0,
+      activeCategory: gallery ? gallery.categories[0] : "",
+      loading: gallery ? false : true
+    };
+
+    _this.handleSetActiveCategoryIndex = _this.handleSetActiveCategoryIndex.bind(_this);
+    _this.renderMedia = _this.renderMedia.bind(_this);
+    _this.fetchGalleries = _this.fetchGalleries.bind(_this);
+    return _this;
+  }
+
+  _createClass(Gallery, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      if (!this.state.gallery) {
+        console.log('state', this.state);
+        console.log('id', this.props.match.params.id);
+        this.fetchGalleries(this.props.match.params.id);
+      }
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (prevProps.match.params.id !== this.props.match.params.id) {
+        this.fetchGalleries(this.props.match.params.id);
+      }
+    }
+  }, {
+    key: 'fetchGalleries',
+    value: function fetchGalleries(slug) {
+      var _this2 = this;
+
+      this.setState(function () {
+        return { loading: true };
+      });
+
+      this.props.fetchInitialData(slug).then(function (gallery) {
+        return _this2.setState(function () {
+          return {
+            gallery: gallery,
+            activeCategory: gallery.categories[0],
+            loading: false
+          };
+        });
+      });
+
+      console.log('fetchGalleries', this.state);
+    }
+  }, {
+    key: 'renderMedia',
+    value: function renderMedia(type) {
+      if (type === 'video') {
+        return _react2.default.createElement(_Video2.default, { url: this.state.gallery.video_url });
+      } else if (type === 'wedding') {
+        return _react2.default.createElement(_Images2.default, { images: this.state.gallery.wedding_images });
+      }
+    }
+  }, {
+    key: 'renderCategories',
+    value: function renderCategories() {
+      var _this3 = this;
+
+      if (!this.state.gallery) {
+        return null;
+      } else {
+        return _react2.default.createElement(
+          'div',
+          null,
+          this.state.gallery.categories.map(function (category, index) {
+            var className = _this3.state.activeCategoryIndex === index ? "categories__item categories__item--active" : "categories__item";
+            return _react2.default.createElement(_Category2.default, {
+              key: 'category-' + index,
+              setActiveCategory: _this3.handleSetActiveCategoryIndex,
+              className: className,
+              index: index,
+              item: category
+            });
+          })
+        );
+      }
+    }
+  }, {
+    key: 'handleSetActiveCategoryIndex',
+    value: function handleSetActiveCategoryIndex(category, index) {
+      // http://stackoverflow.com/questions/40792164/change-active-element-in-a-list-using-react
+      this.setState({
+        activeCategoryIndex: index,
+        activeCategory: category
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      console.log('render', this.state);
+      var _state = this.state,
+          loading = _state.loading,
+          gallery = _state.gallery;
+
+
+      if (loading === true) {
+        return _react2.default.createElement(
+          'h1',
+          null,
+          'Loading'
+        );
+      }
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'section',
+          { className: 'header' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            gallery.title
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            gallery.description
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { id: 'gallery', className: 'gallery' },
+          _react2.default.createElement(
+            'div',
+            { className: 'categories' },
+            this.renderCategories()
+          ),
+          this.renderMedia(this.state.activeCategory)
+        )
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react.Component);
+
+exports.default = Gallery;
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -477,57 +714,239 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Gallery = function (_Component) {
-  _inherits(Gallery, _Component);
+var Video = function (_Component) {
+  _inherits(Video, _Component);
 
-  function Gallery(props) {
-    _classCallCheck(this, Gallery);
+  function Video() {
+    _classCallCheck(this, Video);
 
-    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
-
-    var repos = void 0;
-    if (false) {
-      repos = window.__INITIAL_DATA__;
-      delete window.__INITIAL_DATA__;
-    } else {
-      repos = props.staticContext.data;
-    }
-
-    _this.state = {
-      repos: repos
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).apply(this, arguments));
   }
 
-  _createClass(Gallery, [{
+  _createClass(Video, [{
     key: "render",
     value: function render() {
-      var repos = this.state.repos;
+      return _react2.default.createElement(
+        "div",
+        { className: "gallery__video animate" },
+        _react2.default.createElement("div", { className: "gallery__video-inner", dangerouslySetInnerHTML: { __html: "<iframe src=\"https://player.vimeo.com/video/" + this.props.url + "?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>" } })
+      );
+    }
+  }]);
+
+  return Video;
+}(_react.Component);
+
+exports.default = Video;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Images = function (_Component) {
+  _inherits(Images, _Component);
+
+  function Images() {
+    _classCallCheck(this, Images);
+
+    return _possibleConstructorReturn(this, (Images.__proto__ || Object.getPrototypeOf(Images)).apply(this, arguments));
+  }
+
+  _createClass(Images, [{
+    key: "render",
+    value: function render() {
       return _react2.default.createElement(
         "div",
         null,
+        this.props.images.map(function (item, index) {
+          return _react2.default.createElement(
+            "div",
+            { key: item.title + "-" + index, className: "gallery__item gallery__item--" + item.orientation + " animate" },
+            _react2.default.createElement(
+              "div",
+              { className: "gallery__inner" },
+              _react2.default.createElement("img", { "data-img-src": item.url, alt: item.title, className: "gallery__image" })
+            )
+          );
+        })
+      );
+    }
+  }]);
+
+  return Images;
+}(_react.Component);
+
+exports.default = Images;
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Category = function (_Component) {
+  _inherits(Category, _Component);
+
+  function Category() {
+    _classCallCheck(this, Category);
+
+    return _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).apply(this, arguments));
+  }
+
+  _createClass(Category, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          className = _props.className,
+          index = _props.index,
+          setActiveCategory = _props.setActiveCategory,
+          item = _props.item;
+
+      return _react2.default.createElement(
+        "div",
+        { className: className, onClick: function onClick(event) {
+            setActiveCategory(item, index);
+          } },
         _react2.default.createElement(
-          "section",
-          { className: "header" },
+          "h4",
+          null,
+          item,
           _react2.default.createElement(
-            "h1",
+            "span",
             null,
-            "Gallery"
+            "\u2022"
           )
         )
       );
     }
   }]);
 
-  return Gallery;
+  return Category;
 }(_react.Component);
 
-exports.default = Gallery;
+exports.default = Category;
 
 /***/ }),
-/* 11 */
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Investment = function (_Component) {
+  _inherits(Investment, _Component);
+
+  function Investment() {
+    _classCallCheck(this, Investment);
+
+    return _possibleConstructorReturn(this, (Investment.__proto__ || Object.getPrototypeOf(Investment)).apply(this, arguments));
+  }
+
+  _createClass(Investment, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { className: "investments", id: "investments" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Pricing"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "If you're looking for a ride or die photo/video team you've come to right dang place. Days, weeks, and months after the vows are made, the cake is cut, and you've danced your ass off to the greatest hits; you will be able to remember all of the most beautiful memories from your wedding day. Not because you asked your uncle Bill to set up his camera/camcorder in the back, but because you invested in two people that had your future friends and family in mind throughout one of the biggest days of your life. We're not just giving you digital files created by 1's and 0's, we're adding you to the squad. We'll be your open ear and your shoulder to lean on from day one. There to answer questions, keep the timeline, and get that stupid hair that always flies up to behave. Consider us the two extra guests you never knew you wanted and we'll make sure your investment doesn't go to waste."
+        ),
+        _react2.default.createElement(
+          "p",
+          { className: "price" },
+          "Photo & video packages start at $2500."
+        ),
+        _react2.default.createElement(
+          "p",
+          { className: "hesitate" },
+          "Please ",
+          _react2.default.createElement(
+            _reactRouterDom.NavLink,
+            { to: "/contact" },
+            "contact us"
+          ),
+          " for our detailed pricing info.",
+          _react2.default.createElement("br", null),
+          "We're in the business of telling stories, and we would love to get the chance to tell yours."
+        )
+      );
+    }
+  }]);
+
+  return Investment;
+}(_react.Component);
+
+exports.default = Investment;
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -537,16 +956,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.fetchGalleries = fetchGalleries;
+exports.fetchPopularRepos = fetchPopularRepos;
 
-var _isomorphicFetch = __webpack_require__(12);
+var _isomorphicFetch = __webpack_require__(18);
 
 var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function fetchGalleries(couple) {
-  couple = couple.replace(/-/g, '_');
-  var encodedURI = encodeURI('http://localhost:3000/data/gallery/' + couple + '.json');
+function fetchGalleries(slug) {
+  var encodedURI = encodeURI('https://weddings.nyc3.digitaloceanspaces.com/data/galleries/' + slug + '/index.json');
 
   return (0, _isomorphicFetch2.default)(encodedURI).then(function (data) {
     return data.json();
@@ -556,14 +975,134 @@ function fetchGalleries(couple) {
   });
 }
 
+function fetchPopularRepos() {
+  var language = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'all';
+
+  var encodedURI = encodeURI('https://api.github.com/search/repositories?q=stars:>1+language:' + language + '&sort=stars&order=desc&type=Repositories');
+
+  return (0, _isomorphicFetch2.default)(encodedURI).then(function (data) {
+    return data.json();
+  }).then(function (repos) {
+    return repos.items;
+  }).catch(function (error) {
+    console.warn(error);
+    return null;
+  });
+}
+
 /***/ }),
-/* 12 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-fetch");
 
 /***/ }),
-/* 13 */
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Nav = function (_Component) {
+  _inherits(Nav, _Component);
+
+  function Nav() {
+    _classCallCheck(this, Nav);
+
+    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+  }
+
+  _createClass(Nav, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'header',
+        { className: 'nav-header' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'nav-title' },
+          _react2.default.createElement('a', { href: '', className: 'nav-logo' })
+        ),
+        _react2.default.createElement(
+          'nav',
+          { className: 'nav' },
+          _react2.default.createElement(
+            'a',
+            { href: '#', className: 'nav__toggle' },
+            _react2.default.createElement('span', { className: 'nav__toggle__burger' })
+          ),
+          _react2.default.createElement(
+            'ul',
+            { className: 'nav__menu' },
+            _react2.default.createElement(
+              'li',
+              { className: 'nav__item' },
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeStyle: {}, to: '/#home' },
+                'Stories'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: 'nav__item' },
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeStyle: {}, to: '/about' },
+                'About'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: 'nav__item' },
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeStyle: {}, to: '/investment' },
+                'Investment'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: 'nav__item' },
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeStyle: {}, to: '/contact' },
+                'Contact'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Nav;
+}(_react.Component);
+
+exports.default = Nav;
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -611,12 +1150,6 @@ var NoMatch = function (_Component) {
 }(_react.Component);
 
 exports.default = NoMatch;
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("serialize-javascript");
 
 /***/ })
 /******/ ]);

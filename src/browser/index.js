@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { hydrate } from 'react-dom'
-import App from '../shared/components/App'
+import App from '../shared/global/App'
 import { BrowserRouter } from 'react-router-dom'
-import './images/image.jpg'
 
 hydrate(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById('app')
-)
+);

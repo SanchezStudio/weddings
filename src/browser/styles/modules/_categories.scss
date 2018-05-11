@@ -1,0 +1,49 @@
+.categories {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 16px 16px;
+  &__item {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    margin-bottom: 0;
+    & span {
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      color: $grey;
+      z-index: 1;
+      margin-left: 15px;
+      margin-top: -4px;
+      // @include respond-to(ipad-portrait) {
+      //   display: inline-block;
+      // }
+    }
+    &:last-of-type span { display: none; }
+    h4 {
+      display: inline-block;
+      color: $grey;
+      line-height: 2.5;
+      font-size: 16px;
+      transition: color 400ms ease;
+      &:hover {
+        color: $grey;
+        cursor: pointer;
+      }
+      // @include respond-to(ipad-portrait) {
+      //   font-size: rem-calc(18);
+      // }
+    }
+    &--active {
+      h4 { color: $grey; }
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+  }
+}

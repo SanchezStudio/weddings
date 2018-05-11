@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import { NavLink } from 'react-router-dom'
+import Splash from './components/Splash'
 import list from '../../browser/data/couples.json'
 
 export default class Home extends Component {
@@ -7,6 +9,10 @@ export default class Home extends Component {
     let { couples } = list;
     return (
       <div>
+        <Helmet>
+          <title>Welcome</title>
+        </Helmet>
+        <Splash />
         <section id="home" className="header header--home">
           <h1>Stories</h1>
         </section>

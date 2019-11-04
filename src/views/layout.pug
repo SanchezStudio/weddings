@@ -1,6 +1,6 @@
 doctype html
 html(lang="en")
-    include ./partials/_head.jade
+    include ./partials/_head.pug
 
     body
       if path == '/'
@@ -12,7 +12,7 @@ html(lang="en")
             source(src="/assets/images/video/reel.webm")
           a.splash__caret(href="#welcome")
             include ./../public/images/caret.svg
-      include ./partials/_nav.jade
+      include ./partials/_nav.pug
       block content
-      include ./partials/_footer.jade
+      include ./partials/_footer.pug
       script(src='/assets/js/app.js')

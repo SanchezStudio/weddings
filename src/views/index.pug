@@ -1,0 +1,12 @@
+extends ./layout.pug
+
+block content
+  section#home.header.header--home
+    h1 Stories
+  section.home
+    for item in galleries
+      - var slug = item.slug
+      - var image = item.thumbnail
+      a.home__item(href='/gallery/' + slug)
+        div.home__img(style='background-image: url(' + image + ')')
+        h3.home__title #{item.title}

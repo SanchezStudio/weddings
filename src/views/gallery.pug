@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends layout.pug
 
 block content
   section.header
@@ -6,24 +6,27 @@ block content
     p #{gallery.description}
   section#gallery.gallery
     if gallery.has_video
+      - videoUrl = gallery.video_url
       div.gallery__video.animate
         div.gallery__video-inner
-          <iframe src="https://player.vimeo.com/video/#{gallery.video_url}?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          iframe(width="640" height="360" frameborder="0" src=`https://player.vimeo.com/video/${videoUrl}?title=0&byline=0&portrait=0` webkitallowfullscreen mozallowfullscreen allowfullscreen)
     if gallery.has_gallery
       for item in gallery.images
+        - var url = item.url
+        - var title = item.title
         if item.orientation === "portrait"
           .gallery__item.gallery__item--portrait.animate
             .gallery__inner
-              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+              img.gallery__image(data-img-src=`${url}` alt=`${title}`)
         else if item.orientation === "portrait-full"
           .gallery__item.gallery__item--portrait-full.animate
             .gallery__inner
-              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+              img.gallery__image(data-img-src=`${url}` alt=`${title}`)
         else if item.orientation === "landscape-half"
           .gallery__item.gallery__item--landscape-half.animate
             .gallery__inner
-              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+              img.gallery__image(data-img-src=`${url}` alt=`${title}`)
         else
           .gallery__item.gallery__item--landscape.animate
             .gallery__inner
-              img.gallery__image(data-img-src="#{item.url}" alt="#{item.title}")
+              img.gallery__image(data-img-src=`${url}` alt=`${title}`)

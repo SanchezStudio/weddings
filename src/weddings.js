@@ -20,7 +20,7 @@ app.use('/assets', express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res, next){
